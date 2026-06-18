@@ -1,0 +1,776 @@
+{
+    "19335": {
+        "query_text": "anthropological definition of environment",
+        "icl_examples": "[DOC1]\nEnvironmental anthropology is a sub-specialty within the field of anthropology that takes an active role in examining the relationships between humans and their environment across space and time.pplied anthropology utilizes these understandings to work with people on a local basis as well as trying to satisfy share holders working to gain a resolution for problems related to health, education, social welfare, development and environmental protection.\n\n[DOC2]\nEcological Anthropology. Ecological anthropology attempts to understand the relative influence of environment on human societies and how it is used by different societies.cological Anthropology. Ecological anthropology attempts to understand the relative influence of environment on human societies and how it is used by different societies.",
+        "k_shots": 2,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        anthropological definition of environment\n\n        Relevant Documents:\n        [DOC1]\nEnvironmental anthropology is a sub-specialty within the field of anthropology that takes an active role in examining the relationships between humans and their environment across space and time.pplied anthropology utilizes these understandings to work with people on a local basis as well as trying to satisfy share holders working to gain a resolution for problems related to health, education, social welfare, development and environmental protection.\n\n[DOC2]\nEcological Anthropology. Ecological anthropology attempts to understand the relative influence of environment on human societies and how it is used by different societies.cological Anthropology. Ecological anthropology attempts to understand the relative influence of environment on human societies and how it is used by different societies.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The anthropological definition of environment refers to the complex relationships between humans and their surroundings, encompassing physical, social, and cultural aspects. This concept is explored in sub-specialties within anthropology, such as environmental anthropology and ecological anthropology.\n\nEnvironmental anthropology focuses on examining the interactions between humans and their environment across different spatial and temporal contexts, while ecological anthropology seeks to understand the influence of the environment on human societies and how various societies utilize their environment.\n\nIn essence, the anthropological definition of environment emphasizes the interconnectedness of human societies with their physical and social surroundings, highlighting the dynamic and reciprocal relationships that exist between humans and their environment.",
+        "generation_time_seconds": "8.372452"
+    },
+    "47923": {
+        "query_text": "axon terminals or synaptic knob definition",
+        "icl_examples": "[DOC1]\nAxon terminals (also called synaptic boutons) are distal terminations of the branches of an axon. An axon nerve fiber is a long, slender projection of a nerve cell, or neuron, that conducts electrical impulses (called action potentials) away from the neuron's cell body, or soma, in order to transmit those impulses to other neurons.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        axon terminals or synaptic knob definition\n\n        Relevant Documents:\n        [DOC1]\nAxon terminals (also called synaptic boutons) are distal terminations of the branches of an axon. An axon nerve fiber is a long, slender projection of a nerve cell, or neuron, that conducts electrical impulses (called action potentials) away from the neuron's cell body, or soma, in order to transmit those impulses to other neurons.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Axon terminals, also referred to as synaptic boutons, are the distal terminations of the branches of an axon. They are the points at which an axon, a long, slender projection of a nerve cell or neuron, connects with other neurons to transmit electrical impulses, known as action potentials.",
+        "generation_time_seconds": "4.463165"
+    },
+    "87181": {
+        "query_text": "causes of left ventricular hypertrophy",
+        "icl_examples": "[DOC1]\nAxon terminals (also called synaptic boutons) are distal terminations of the branches of an axon. An axon nerve fiber is a long, slender projection of a nerve cell, or neuron, that conducts electrical impulses (called action potentials) away from the neuron's cell body, or soma, in order to transmit those impulses to other neurons.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        causes of left ventricular hypertrophy\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Left ventricular hypertrophy (LVH) is a condition where the muscle wall of the left ventricle becomes thickened, often in response to increased pressure or volume overload. The causes of LVH can be broadly classified into two main categories: primary and secondary.\n\n**Primary Causes:**\n\n1. **Genetic disorders:** Certain genetic conditions, such as hypertrophic cardiomyopathy, can cause LVH.\n2. **Familial hypercholesterolemia:** This is a genetic disorder that leads to high cholesterol levels, which can cause LVH.\n\n**Secondary Causes:**\n\n1. **Hypertension:** High blood pressure is the most common cause of LVH, as the heart has to work harder to pump blood, leading to thickening of the left ventricle.\n2. **Aortic stenosis:** This is a condition where the aortic valve narrows, causing the heart to pump harder, leading to LVH.\n3. **Aortic regurgitation:** This is a condition where the aortic valve does not close properly, causing blood to leak back into the left ventricle, leading to thickening of the muscle wall.\n4. **Coarctation of the aorta:** This is a congenital condition",
+        "generation_time_seconds": "14.049129"
+    },
+    "87452": {
+        "query_text": "causes of military suicide",
+        "icl_examples": "[DOC1]\nWe suggest that moral injury is likely one of the most important factors in military suicide rates. Moral injury is not PTSD. The latter is a dysfunction of brain areas that suppress fear and integrate feeling with coherent memory; symptoms include flashbacks, nightmares, dissociative episodes and hyper-vigilance. PTSD is an immediate injury of trauma.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        causes of military suicide\n\n        Relevant Documents:\n        [DOC1]\nWe suggest that moral injury is likely one of the most important factors in military suicide rates. Moral injury is not PTSD. The latter is a dysfunction of brain areas that suppress fear and integrate feeling with coherent memory; symptoms include flashbacks, nightmares, dissociative episodes and hyper-vigilance. PTSD is an immediate injury of trauma.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Based on the relevant documents provided, it appears that the query \"causes of military suicide\" is focused on understanding the underlying factors contributing to military suicide rates. According to the relevant document [DOC1], one of the most significant factors is \"moral injury.\" \n\nMoral injury is distinct from post-traumatic stress disorder (PTSD) and refers to a dysfunction that can arise from traumatic experiences. It is not the same as PTSD, which is characterized by symptoms such as flashbacks, nightmares, dissociative episodes, and hyper-vigilance.\n\nTherefore, the answer to the query \"causes of military suicide\" is:\n\nOne of the primary causes of military suicide is moral injury, a distinct and complex factor that can arise from traumatic experiences, separate from post-traumatic stress disorder (PTSD).",
+        "generation_time_seconds": "9.920001"
+    },
+    "104861": {
+        "query_text": "cost of interior concrete flooring",
+        "icl_examples": "[DOC1]\nWe suggest that moral injury is likely one of the most important factors in military suicide rates. Moral injury is not PTSD. The latter is a dysfunction of brain areas that suppress fear and integrate feeling with coherent memory; symptoms include flashbacks, nightmares, dissociative episodes and hyper-vigilance. PTSD is an immediate injury of trauma.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        cost of interior concrete flooring\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The cost of interior concrete flooring can vary depending on several factors, including the location, labor costs, and design complexity. However, here are some estimated costs to help you plan:\n\n**Materials Costs:**\n\n* Concrete mix: $0.50 to $1.50 per square foot\n* Sand or aggregate: $0.25 to $1.00 per square foot\n* Cement: $0.25 to $1.00 per square foot\n* Additives (e.g., color, texture): $0.10 to $0.50 per square foot\n* Total materials cost: $1.10 to $4.00 per square foot\n\n**Labor Costs:**\n\n* Pouring and finishing: $2.00 to $6.00 per square foot\n* Polishing and sealing: $1.00 to $3.00 per square foot\n* Total labor cost: $3.00 to $9.00 per square foot\n\n**Installation Costs:**\n\n* Basic installation (e.g., simple pour): $1.50 to $3.00 per square foot\n* Advanced installation (e.g., decorative finishes): $3.00 to $6.00 per square foot\n* Total installation cost: $1.50 to",
+        "generation_time_seconds": "14.065722"
+    },
+    "130510": {
+        "query_text": "definition declaratory judgment",
+        "icl_examples": "[DOC1]\nDeclaratory judgments are judgment of a court in a civil case that declares the rights, duties, or obligations of each party in a dispute. However, a declaratory judgment does not order any action or result in any award of damages to any party to the case.\n\n[DOC2]\nWiktionary (0.00 / 0 votes) Rate this definition: declaratory judgment (Noun). A ruling of a court in a civil case which declares the rights, duties, or obligations of each party in a dispute, but does not necessarily award any damages or other relief.\n\n[DOC3]\nA declaratory judgment, also called a declaration, is the legal determination of a court that resolves legal uncertainty for the litigants.\n\n[DOC4]\nA declaratory judgment is one which simply declares the rights of the parties, or expresser, the opinion of the court on a. question of law, without ordering anything to be done.",
+        "k_shots": 4,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        definition declaratory judgment\n\n        Relevant Documents:\n        [DOC1]\nDeclaratory judgments are judgment of a court in a civil case that declares the rights, duties, or obligations of each party in a dispute. However, a declaratory judgment does not order any action or result in any award of damages to any party to the case.\n\n[DOC2]\nWiktionary (0.00 / 0 votes) Rate this definition: declaratory judgment (Noun). A ruling of a court in a civil case which declares the rights, duties, or obligations of each party in a dispute, but does not necessarily award any damages or other relief.\n\n[DOC3]\nA declaratory judgment, also called a declaration, is the legal determination of a court that resolves legal uncertainty for the litigants.\n\n[DOC4]\nA declaratory judgment is one which simply declares the rights of the parties, or expresser, the opinion of the court on a. question of law, without ordering anything to be done.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "A declaratory judgment is a ruling of a court in a civil case that declares the rights, duties, or obligations of each party in a dispute, without ordering any action or awarding damages. It is a legal determination that resolves legal uncertainty for the litigants, simply declaring the rights of the parties or expressing the opinion of the court on a question of law without requiring any further action to be taken.",
+        "generation_time_seconds": "6.972457"
+    },
+    "131843": {
+        "query_text": "definition of a sigmet",
+        "icl_examples": "[DOC1]\nDefinition of SIGMET. plural. SIGMETs. also. sigmets. : a notice of significant hazardous weather conditions (such as extreme turbulence, icing, or poor visibility) in a large area that is provided to the pilot of an aircraft before takeoff — compare airmet.\n\n[DOC2]\nSIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs, convective and non-convective.\n\n[DOC3]\nSIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs - convective and non-convective. The criteria for a non-convective SIGMET to be issued are severe or greater turbulence over a 3,000-square-mile (7,800 km2) area, severe or greater icing over a 3,000-square-mile (7,800 km2) area or IMC over a 3,000-square-mile (7,800 km2) area due to dust, sand, or volcanic ash.\n\n[DOC4]\nsigmet SIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs, convective and non-convective.",
+        "k_shots": 4,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        definition of a sigmet\n\n        Relevant Documents:\n        [DOC1]\nDefinition of SIGMET. plural. SIGMETs. also. sigmets. : a notice of significant hazardous weather conditions (such as extreme turbulence, icing, or poor visibility) in a large area that is provided to the pilot of an aircraft before takeoff — compare airmet.\n\n[DOC2]\nSIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs, convective and non-convective.\n\n[DOC3]\nSIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs - convective and non-convective. The criteria for a non-convective SIGMET to be issued are severe or greater turbulence over a 3,000-square-mile (7,800 km2) area, severe or greater icing over a 3,000-square-mile (7,800 km2) area or IMC over a 3,000-square-mile (7,800 km2) area due to dust, sand, or volcanic ash.\n\n[DOC4]\nsigmet SIGMET, or Significant Meteorological Information, is a weather advisory that contains meteorological information concerning the safety of all aircraft. There are two types of SIGMETs, convective and non-convective.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "A SIGMET, short for Significant Meteorological Information, is a weather advisory that provides information about significant hazardous weather conditions that may affect the safety of all aircraft. It is a notice issued to pilots before takeoff, alerting them to extreme weather conditions such as:\n\n* Extreme turbulence\n* Icing\n* Poor visibility\n* Severe or greater turbulence over a large area (typically 3,000 square miles)\n* Severe or greater icing over a large area (typically 3,000 square miles)\n* Instrument Meteorological Conditions (IMC) due to dust, sand, or volcanic ash over a large area (typically 3,000 square miles)\n\nThere are two types of SIGMETs: convective and non-convective. SIGMETs are intended to provide critical information to pilots to ensure the safety of all aircraft.",
+        "generation_time_seconds": "12.179703"
+    },
+    "146187": {
+        "query_text": "difference between a mcdouble and a double cheeseburger",
+        "icl_examples": "[DOC1]\nThe McDouble is listed as a slice of American cheese between two 100% beef patties, topped with pickles, onions, ketchup and mustard. mcdonalds.com. The Double Cheeseburger is listed as two slices of golden American cheese with two 100% all beef patties, pickles, onions, ketchup and mustard.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        difference between a mcdouble and a double cheeseburger\n\n        Relevant Documents:\n        [DOC1]\nThe McDouble is listed as a slice of American cheese between two 100% beef patties, topped with pickles, onions, ketchup and mustard. mcdonalds.com. The Double Cheeseburger is listed as two slices of golden American cheese with two 100% all beef patties, pickles, onions, ketchup and mustard.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The main difference between a McDouble and a Double Cheeseburger is the number of slices of cheese used in each sandwich. A McDouble features one slice of American cheese between two 100% beef patties, whereas a Double Cheeseburger has two slices of American cheese with two 100% all beef patties.",
+        "generation_time_seconds": "3.535104"
+    },
+    "148538": {
+        "query_text": "difference between rn and bsn",
+        "icl_examples": "[DOC1]\nCancel. The difference between an RN and a BSN is that an RN is a title for a registered nurse, while a BSN stands for a Bachelor of Science in nursing. Learn about the differences between degrees and licenses with help from a licensed RN in this free video on nursing jobs and health care.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        difference between rn and bsn\n\n        Relevant Documents:\n        [DOC1]\nCancel. The difference between an RN and a BSN is that an RN is a title for a registered nurse, while a BSN stands for a Bachelor of Science in nursing. Learn about the differences between degrees and licenses with help from a licensed RN in this free video on nursing jobs and health care.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The main difference between an RN (Registered Nurse) and a BSN (Bachelor of Science in Nursing) lies in their academic credentials and titles. An RN is a title granted to a nurse who has completed a nursing program and passed the NCLEX-RN exam, indicating they have the necessary skills and knowledge to practice as a registered nurse. On the other hand, a BSN is a degree earned by completing a bachelor's program in nursing, which typically includes both classroom and clinical training. While all BSNs are RNs, not all RNs have a BSN degree.",
+        "generation_time_seconds": "6.495088"
+    },
+    "156493": {
+        "query_text": "do goldfish grow",
+        "icl_examples": "[DOC1]\nCancel. The difference between an RN and a BSN is that an RN is a title for a registered nurse, while a BSN stands for a Bachelor of Science in nursing. Learn about the differences between degrees and licenses with help from a licensed RN in this free video on nursing jobs and health care.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        do goldfish grow\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Goldfish can grow, but their growth rate and maximum size vary depending on several factors, including breed, water quality, diet, and living conditions.\n\nOn average, a goldfish can grow to be about 2-5 inches (5-13 cm) in length, but some breeds, such as the Common Goldfish, can grow up to 6-8 inches (15-20 cm) or more with proper care. Some varieties, like the Shubunkin or the Fantail, can even reach lengths of up to 10 inches (25 cm) or more.\n\nHowever, it's worth noting that goldfish growth rates can slow down significantly as they mature, and they may not grow much beyond 2-3 years of age. In fact, many goldfish can live for 10-15 years or more with proper care, making them a long-term commitment as pets.\n\nTo promote healthy growth and longevity in goldfish, it's essential to provide them with a balanced diet, clean and spacious living conditions, and regular water changes.",
+        "generation_time_seconds": "11.785231"
+    },
+    "168216": {
+        "query_text": "does legionella pneumophila cause pneumonia",
+        "icl_examples": "[DOC1]\nStreptococcus pneumoniae, a type of bacteria, is the most common cause of pneumonia. Legionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. The most common cause of viral pneumonia in adults is the influenza virus. A number of different respiratory viruses cause pneumonia in children, such as respiratory syncytial virus (RSV).\n\n[DOC2]\nLegionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. Haemophilus influenzae is a type of bacteria that can cause pneumonia.\n\n[DOC3]\nA common cause of bacterial pneumonia is Streptococcus pneumoniae. Other bacteria can cause pneumonia, including Mycoplasma pneumoniae, Chlamydophila (Chlamydia) pneumoniae, Chlamydophila (Chlamydia) psittaci, and Legionella pneumophila. common cause of bacterial pneumonia is Streptococcus pneumoniae. Other bacteria can cause pneumonia, including Mycoplasma pneumoniae, Chlamydophila (Chlamydia) pneumoniae, Chlamydophila (Chlamydia) psittaci, and Legionella pneumophila.\n\n[DOC4]\nLEGIONELLA PNEUMOPHILA. Like C. pneumoniae, Legionella species are intracellular organisms. Legionella pneumophila is the most pathogenic species, and several serotypes have been identified. Serotype 1 has been associated with most reported human cases of pneumonia caused by L. pneumonphila.11.\n\n[DOC5]\nLegionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. The most common cause of viral pneumonia in adults is the influenza virus.\n\n[DOC6]\nLegionellosis is an infection that is caused by the bacterium Legionella pneumophila. Legionnaires' disease is the more severe form of the infection, which may involve pneumonia. The onset of this form of the disease is usually two to 10 days after infection but can occur up to 16 days later.\n\n[DOC7]\nAlthough several other species of the genus Legionella were subsequently identified, L pneumophila is the most frequent cause of human legionellosis and a relatively common cause of community-acquired and nosocomial pneumonia in adults.",
+        "k_shots": 7,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        does legionella pneumophila cause pneumonia\n\n        Relevant Documents:\n        [DOC1]\nStreptococcus pneumoniae, a type of bacteria, is the most common cause of pneumonia. Legionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. The most common cause of viral pneumonia in adults is the influenza virus. A number of different respiratory viruses cause pneumonia in children, such as respiratory syncytial virus (RSV).\n\n[DOC2]\nLegionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. Haemophilus influenzae is a type of bacteria that can cause pneumonia.\n\n[DOC3]\nA common cause of bacterial pneumonia is Streptococcus pneumoniae. Other bacteria can cause pneumonia, including Mycoplasma pneumoniae, Chlamydophila (Chlamydia) pneumoniae, Chlamydophila (Chlamydia) psittaci, and Legionella pneumophila. common cause of bacterial pneumonia is Streptococcus pneumoniae. Other bacteria can cause pneumonia, including Mycoplasma pneumoniae, Chlamydophila (Chlamydia) pneumoniae, Chlamydophila (Chlamydia) psittaci, and Legionella pneumophila.\n\n[DOC4]\nLEGIONELLA PNEUMOPHILA. Like C. pneumoniae, Legionella species are intracellular organisms. Legionella pneumophila is the most pathogenic species, and several serotypes have been identified. Serotype 1 has been associated with most reported human cases of pneumonia caused by L. pneumonphila.11.\n\n[DOC5]\nLegionella pneumophila is the bacterial type that causes the pneumonia known as Legionnaires' disease. Other bacteria types that can cause pneumonia include the bacteria that cause so-called atypical pneumonia, Legionella pneumophila, Mycoplasma pneumoniae, and Chlamydophila pneumonia. The most common cause of viral pneumonia in adults is the influenza virus.\n\n[DOC6]\nLegionellosis is an infection that is caused by the bacterium Legionella pneumophila. Legionnaires' disease is the more severe form of the infection, which may involve pneumonia. The onset of this form of the disease is usually two to 10 days after infection but can occur up to 16 days later.\n\n[DOC7]\nAlthough several other species of the genus Legionella were subsequently identified, L pneumophila is the most frequent cause of human legionellosis and a relatively common cause of community-acquired and nosocomial pneumonia in adults.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Legionella pneumophila is a type of bacteria that causes pneumonia, specifically the disease known as Legionnaires' disease. In addition to Legionnaires' disease, it can also cause other forms of pneumonia, particularly atypical pneumonia. According to various medical sources, Legionella pneumophila is a relatively common cause of community-acquired and nosocomial pneumonia in adults, and it is considered one of the several bacteria that can cause pneumonia, along with other types such as Streptococcus pneumoniae, Mycoplasma pneumoniae, and Chlamydophila pneumonia.",
+        "generation_time_seconds": "18.872316"
+    },
+    "182539": {
+        "query_text": "example of monotonic function",
+        "icl_examples": "[DOC1]\nmonotonic function. Monotonic Function. (or monotone function), a function whose increments Δf(x) = f(x′) − f(x) do not change sign when Δx = x′ − x > 0; that is, the increments are either always nonnegative or always nonpositive. Somewhat inaccurately, a monotonic function can be defined as a function that always varies in the same direction.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        example of monotonic function\n\n        Relevant Documents:\n        [DOC1]\nmonotonic function. Monotonic Function. (or monotone function), a function whose increments Δf(x) = f(x′) − f(x) do not change sign when Δx = x′ − x > 0; that is, the increments are either always nonnegative or always nonpositive. Somewhat inaccurately, a monotonic function can be defined as a function that always varies in the same direction.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "A monotonic function is a function whose increments Δf(x) = f(x′) − f(x) do not change sign when Δx = x′ − x > 0; that is, the increments are either always nonnegative or always nonpositive. This means that the function either always increases or always decreases as the input value increases.",
+        "generation_time_seconds": "3.919352"
+    },
+    "183378": {
+        "query_text": "exons definition biology",
+        "icl_examples": "[DOC1]\nExon. any nucleotide sequence encoded by a gene that remains present within the final mature RNA product of that gene after introns have been removed by RNA splicing. The term exon refers to both the DNA sequence within a gene and to the corresponding... en​.wikipedia​.org​/wiki​/Exon.\n\n[DOC2]\nExons and introns are related to genes. An exon is termed as a nucleic acid sequence which is represented in the RNA molecule. Introns, on the other hand, are termed as nucleotide sequences seen within the genes which are removed through RNA splicing for generating a mature RNA molecule.\n\n[DOC3]\nExons. Exons are the nucleotide sequences of genes that are expressed, and those are found at either sides of an intron. In simple terms, it could be stated that exons really hit the ground in the expression of genes or in the protein synthesis.The polypeptide strand is formed based on the nucleotide sequence in exons. Exons are found at the two ends of a gene while introns are always found inside the gene. • When mutations take place, introns sometimes contribute nucleotides but usually not the other way around. • Both DNA and RNA contain introns and exons, but mature RNA only contain exons and not the introns.\n\n[DOC4]\nDefinition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA — compare intron.\n\n[DOC5]\nMedical Definition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA—compare intron.\n\n[DOC6]\nHome » Executor » Exercise bone » Exhibitions » Exit domain » Exons. coding regions of messenger rna included in the genetic transcript which survive the processing of rna in cell nuclei to become part of a spliced messenger of structural rna in the cytoplasm. They include joining and diversity of immunoglobulin genes.\n\n[DOC7]\nBy definition, exons and introns are sequences in a protein-coding gene region of a double-stranded DNA molecule (dsDNA) that are expressed as proteins, or intervening sequences not so expressed. The exon and intron sequences are typicallly visualized as the Sense Strand of the dsDNA, written 5'-3', left to right.",
+        "k_shots": 7,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        exons definition biology\n\n        Relevant Documents:\n        [DOC1]\nExon. any nucleotide sequence encoded by a gene that remains present within the final mature RNA product of that gene after introns have been removed by RNA splicing. The term exon refers to both the DNA sequence within a gene and to the corresponding... en​.wikipedia​.org​/wiki​/Exon.\n\n[DOC2]\nExons and introns are related to genes. An exon is termed as a nucleic acid sequence which is represented in the RNA molecule. Introns, on the other hand, are termed as nucleotide sequences seen within the genes which are removed through RNA splicing for generating a mature RNA molecule.\n\n[DOC3]\nExons. Exons are the nucleotide sequences of genes that are expressed, and those are found at either sides of an intron. In simple terms, it could be stated that exons really hit the ground in the expression of genes or in the protein synthesis.The polypeptide strand is formed based on the nucleotide sequence in exons. Exons are found at the two ends of a gene while introns are always found inside the gene. • When mutations take place, introns sometimes contribute nucleotides but usually not the other way around. • Both DNA and RNA contain introns and exons, but mature RNA only contain exons and not the introns.\n\n[DOC4]\nDefinition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA — compare intron.\n\n[DOC5]\nMedical Definition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA—compare intron.\n\n[DOC6]\nHome » Executor » Exercise bone » Exhibitions » Exit domain » Exons. coding regions of messenger rna included in the genetic transcript which survive the processing of rna in cell nuclei to become part of a spliced messenger of structural rna in the cytoplasm. They include joining and diversity of immunoglobulin genes.\n\n[DOC7]\nBy definition, exons and introns are sequences in a protein-coding gene region of a double-stranded DNA molecule (dsDNA) that are expressed as proteins, or intervening sequences not so expressed. The exon and intron sequences are typicallly visualized as the Sense Strand of the dsDNA, written 5'-3', left to right.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "In biology, exons are defined as specific nucleotide sequences within a gene that remain present in the final mature RNA product after introns have been removed by RNA splicing. These sequences encode information for protein synthesis and are essential for the expression of genes. Exons can be found at either end of a gene, and they are the building blocks of messenger RNA (mRNA), which carries genetic information from DNA to the ribosome for protein synthesis. In contrast, introns are nucleotide sequences that are removed during RNA splicing and do not contribute to protein synthesis.\n\nEvidence from the provided documents supports this definition:\n\n- [DOC1] defines exons as \"any nucleotide sequence encoded by a gene that remains present within the final mature RNA product of that gene after introns have been removed by RNA splicing.\"\n- [DOC2] describes exons as nucleic acid sequences represented in the RNA molecule, while introns are removed during RNA splicing.\n- [DOC3] explains that exons are nucleotide sequences that are expressed and found at either side of an intron, contributing to protein synthesis.\n- [DOC4] and [DOC5] provide a medical definition of exons as polynucleotide sequences that code information for protein synthesis and are copied",
+        "generation_time_seconds": "28.670378"
+    },
+    "207786": {
+        "query_text": "how are some sharks warm blooded",
+        "icl_examples": "[DOC1]\nExon. any nucleotide sequence encoded by a gene that remains present within the final mature RNA product of that gene after introns have been removed by RNA splicing. The term exon refers to both the DNA sequence within a gene and to the corresponding... en​.wikipedia​.org​/wiki​/Exon.\n\n[DOC2]\nExons and introns are related to genes. An exon is termed as a nucleic acid sequence which is represented in the RNA molecule. Introns, on the other hand, are termed as nucleotide sequences seen within the genes which are removed through RNA splicing for generating a mature RNA molecule.\n\n[DOC3]\nExons. Exons are the nucleotide sequences of genes that are expressed, and those are found at either sides of an intron. In simple terms, it could be stated that exons really hit the ground in the expression of genes or in the protein synthesis.The polypeptide strand is formed based on the nucleotide sequence in exons. Exons are found at the two ends of a gene while introns are always found inside the gene. • When mutations take place, introns sometimes contribute nucleotides but usually not the other way around. • Both DNA and RNA contain introns and exons, but mature RNA only contain exons and not the introns.\n\n[DOC4]\nDefinition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA — compare intron.\n\n[DOC5]\nMedical Definition of exon. : a polynucleotide sequence in a nucleic acid that codes information for protein synthesis and that is copied and spliced together with other such sequences to form messenger RNA—compare intron.\n\n[DOC6]\nHome » Executor » Exercise bone » Exhibitions » Exit domain » Exons. coding regions of messenger rna included in the genetic transcript which survive the processing of rna in cell nuclei to become part of a spliced messenger of structural rna in the cytoplasm. They include joining and diversity of immunoglobulin genes.\n\n[DOC7]\nBy definition, exons and introns are sequences in a protein-coding gene region of a double-stranded DNA molecule (dsDNA) that are expressed as proteins, or intervening sequences not so expressed. The exon and intron sequences are typicallly visualized as the Sense Strand of the dsDNA, written 5'-3', left to right.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        how are some sharks warm blooded\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "While most sharks are considered cold-blooded, also known as ectothermic, there are some species that exhibit a unique physiological adaptation, allowing them to regulate their body temperature to a certain extent, often referred to as \"warm-blooded\" or endothermic, but not in the same way as mammals and birds.\n\nSome species of sharks, such as the great white shark (Carcharodon carcharias), the mako shark (Isurus spp.), and the blue shark (Prionace glauca), have been found to have a more efficient circulatory system and a higher metabolic rate than other sharks. This allows them to generate heat internally and maintain a warmer body temperature, even in cold water.\n\nHowever, it's essential to note that these sharks are not fully endothermic like mammals and birds, meaning they do not actively generate heat to maintain a constant body temperature, like humans do. Instead, they rely on the heat generated by their muscles during physical activity to warm their bodies.\n\nIn addition, some shark species, such as the bull shark (Carcharhinus leucas) and the tiger shark (Galeocerdo cuvier), have been found to have a relatively stable body temperature, even in cold water, but this is thought",
+        "generation_time_seconds": "14.177487"
+    },
+    "264014": {
+        "query_text": "how long is life cycle of flea",
+        "icl_examples": "[DOC1]\nThere are four stages in a flea's life: egg, larva (maggoty-like-thing), pupa (in a cocoon) and adult. Egg-to-egg life cycle is usually two to four weeks. Under the right conditions this can be a little shorter (12 days), or much longer (8 months).\n\n[DOC2]\nThe life cycle of a flea can last anywhere from 20 days to an entire year. It depends on how long the flea remains in the dormant stage (eggs, larvae, pupa). Outside influences, such as weather, affect the flea cycle. A female flea can lay around 20 to 25 eggs in one day.\n\n[DOC3]\nThe life cycle of a flea can last anywhere from 20 days to an entire year. It depends on how long the flea remains in the dormant stage (eggs, larvae, pupa). Outside influences, such as weather, affect the flea cycle. A female flea can lay around 20 to 25 eggs in one day. The flea egg stage is the beginning of the flea cycle. This part of the flea cycle represents a little more than one third of the flea population at any given time. Depending on the temperature and humidity of the environment the egg can take from two to six days to hatch.",
+        "k_shots": 3,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        how long is life cycle of flea\n\n        Relevant Documents:\n        [DOC1]\nThere are four stages in a flea's life: egg, larva (maggoty-like-thing), pupa (in a cocoon) and adult. Egg-to-egg life cycle is usually two to four weeks. Under the right conditions this can be a little shorter (12 days), or much longer (8 months).\n\n[DOC2]\nThe life cycle of a flea can last anywhere from 20 days to an entire year. It depends on how long the flea remains in the dormant stage (eggs, larvae, pupa). Outside influences, such as weather, affect the flea cycle. A female flea can lay around 20 to 25 eggs in one day.\n\n[DOC3]\nThe life cycle of a flea can last anywhere from 20 days to an entire year. It depends on how long the flea remains in the dormant stage (eggs, larvae, pupa). Outside influences, such as weather, affect the flea cycle. A female flea can lay around 20 to 25 eggs in one day. The flea egg stage is the beginning of the flea cycle. This part of the flea cycle represents a little more than one third of the flea population at any given time. Depending on the temperature and humidity of the environment the egg can take from two to six days to hatch.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The life cycle of a flea typically consists of four stages: egg, larva, pupa, and adult. The duration of the flea life cycle can vary significantly, ranging from as short as 20 days to as long as an entire year. Factors such as weather, temperature, and humidity can influence the flea cycle, affecting the length of time it remains in the dormant stages (eggs, larvae, and pupa). Under optimal conditions, the egg-to-egg life cycle can be as short as 12 days, but it can also be longer, up to 8 months, depending on the environment.",
+        "generation_time_seconds": "8.850578"
+    },
+    "359349": {
+        "query_text": "how to find the midsegment of a trapezoid",
+        "icl_examples": "[DOC1]\nThe midsegment (also called the median or midline) of a trapezoid is the segment that joins the midpoints of the legs. It is parallel to the bases. Its length m is equal to the average of the lengths of the bases a and b of the trapezoid,n obtuse trapezoid with two pairs of parallel sides is a parallelogram. A parallelogram has central 2-fold rotational symmetry (or point reflection symmetry). There is some disagreement whether parallelograms, which have two pairs of parallel sides, should be regarded as trapezoids.\n\n[DOC2]\nThe midsegment of a trapezoid has two special properties: 1  The midsegment of a trapezoid is parallel to each base. 2  The length of the midsegment of a trapezoid is equal to half the sum of the lengths of its bases.\n\n[DOC3]\nExtended Conjecture: (Trapezoid Midsegment Conjecture): The midsegment of a trapezoid is parallel to the bases and is equal in length to the average of the lengths of the two bases. Explanation: A midsegment of a trapezoid is a segment that connects the midpoints of the two non-parallel sides of a trapezoid. This segment has two special properties. It is parallel to the bases of the trapezoid. The length of the midsegment is the average of the lengths of the two bases. Remember that the bases of a trapezoid are parallel. Key Curriculum Press can provide demo versions of Geometer's Sketch Pad.\n\n[DOC4]\nA trapezoid midsegment connects the midpoints of the two congruent sides of the trapezoid, and is parallel to the pair of parallel sides. The length of the midsegment is the sum of the two bases divided by 2. Remember that the bases of a trapezoid are the two parallel sides. To find angles within a trapezoid, remember that since there are two sides are parallel, the other sides can be seen as transversals, forming corresponding angles and same side interior angles.\n\n[DOC5]\nThe midsegment of a trapezoid is referred to as the median or the midline. The length of the midsegment is calculated by finding the average length of each of the parallel sides. The formula for this length is the sum of the length of side A plus the length of side B, divided by two. The midsegment is also used to calculate the area of a trapezoid. Learn more about Shapes.",
+        "k_shots": 5,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        how to find the midsegment of a trapezoid\n\n        Relevant Documents:\n        [DOC1]\nThe midsegment (also called the median or midline) of a trapezoid is the segment that joins the midpoints of the legs. It is parallel to the bases. Its length m is equal to the average of the lengths of the bases a and b of the trapezoid,n obtuse trapezoid with two pairs of parallel sides is a parallelogram. A parallelogram has central 2-fold rotational symmetry (or point reflection symmetry). There is some disagreement whether parallelograms, which have two pairs of parallel sides, should be regarded as trapezoids.\n\n[DOC2]\nThe midsegment of a trapezoid has two special properties: 1  The midsegment of a trapezoid is parallel to each base. 2  The length of the midsegment of a trapezoid is equal to half the sum of the lengths of its bases.\n\n[DOC3]\nExtended Conjecture: (Trapezoid Midsegment Conjecture): The midsegment of a trapezoid is parallel to the bases and is equal in length to the average of the lengths of the two bases. Explanation: A midsegment of a trapezoid is a segment that connects the midpoints of the two non-parallel sides of a trapezoid. This segment has two special properties. It is parallel to the bases of the trapezoid. The length of the midsegment is the average of the lengths of the two bases. Remember that the bases of a trapezoid are parallel. Key Curriculum Press can provide demo versions of Geometer's Sketch Pad.\n\n[DOC4]\nA trapezoid midsegment connects the midpoints of the two congruent sides of the trapezoid, and is parallel to the pair of parallel sides. The length of the midsegment is the sum of the two bases divided by 2. Remember that the bases of a trapezoid are the two parallel sides. To find angles within a trapezoid, remember that since there are two sides are parallel, the other sides can be seen as transversals, forming corresponding angles and same side interior angles.\n\n[DOC5]\nThe midsegment of a trapezoid is referred to as the median or the midline. The length of the midsegment is calculated by finding the average length of each of the parallel sides. The formula for this length is the sum of the length of side A plus the length of side B, divided by two. The midsegment is also used to calculate the area of a trapezoid. Learn more about Shapes.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "To find the midsegment of a trapezoid, you need to join the midpoints of its legs, which are the non-parallel sides. The midsegment is a segment that connects these two midpoints. \n\nThe length of the midsegment can be calculated in two ways:\n\n1. It is equal to the average of the lengths of the bases (or the parallel sides) of the trapezoid.\n2. It is equal to half the sum of the lengths of the bases (or the parallel sides) of the trapezoid.\n\nIn mathematical terms, the length of the midsegment can be calculated using the formula: (Length of side A + Length of side B) / 2.\n\nThis information is supported by multiple sources, including [DOC1], [DOC2], [DOC3], [DOC4], and [DOC5], which all confirm that the midsegment of a trapezoid is parallel to the bases and has a length equal to the average or half the sum of the lengths of the bases.",
+        "generation_time_seconds": "25.700759"
+    },
+    "405717": {
+        "query_text": "is cdg airport in main paris",
+        "icl_examples": "[DOC1]\nThe midsegment (also called the median or midline) of a trapezoid is the segment that joins the midpoints of the legs. It is parallel to the bases. Its length m is equal to the average of the lengths of the bases a and b of the trapezoid,n obtuse trapezoid with two pairs of parallel sides is a parallelogram. A parallelogram has central 2-fold rotational symmetry (or point reflection symmetry). There is some disagreement whether parallelograms, which have two pairs of parallel sides, should be regarded as trapezoids.\n\n[DOC2]\nThe midsegment of a trapezoid has two special properties: 1  The midsegment of a trapezoid is parallel to each base. 2  The length of the midsegment of a trapezoid is equal to half the sum of the lengths of its bases.\n\n[DOC3]\nExtended Conjecture: (Trapezoid Midsegment Conjecture): The midsegment of a trapezoid is parallel to the bases and is equal in length to the average of the lengths of the two bases. Explanation: A midsegment of a trapezoid is a segment that connects the midpoints of the two non-parallel sides of a trapezoid. This segment has two special properties. It is parallel to the bases of the trapezoid. The length of the midsegment is the average of the lengths of the two bases. Remember that the bases of a trapezoid are parallel. Key Curriculum Press can provide demo versions of Geometer's Sketch Pad.\n\n[DOC4]\nA trapezoid midsegment connects the midpoints of the two congruent sides of the trapezoid, and is parallel to the pair of parallel sides. The length of the midsegment is the sum of the two bases divided by 2. Remember that the bases of a trapezoid are the two parallel sides. To find angles within a trapezoid, remember that since there are two sides are parallel, the other sides can be seen as transversals, forming corresponding angles and same side interior angles.\n\n[DOC5]\nThe midsegment of a trapezoid is referred to as the median or the midline. The length of the midsegment is calculated by finding the average length of each of the parallel sides. The formula for this length is the sum of the length of side A plus the length of side B, divided by two. The midsegment is also used to calculate the area of a trapezoid. Learn more about Shapes.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        is cdg airport in main paris\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Charles de Gaulle Airport (CDG) is not located in central Paris, but rather it is situated approximately 23 miles (37 kilometers) northeast of the city center. It is one of the six international airports in the Île-de-France region and serves as the primary hub for Air France.\n\nThe airport is located in the commune of Tremblay-en-France, in the Seine-Saint-Denis department, and is connected to central Paris by various transportation options, including the RER B train, which takes around 35-40 minutes to reach the city center.",
+        "generation_time_seconds": "6.584918"
+    },
+    "443396": {
+        "query_text": "lps laws definition",
+        "icl_examples": "[DOC1]\nLPS Act. LPS Act. a California law named for sponsors of the legislation (Lanterman, Petris, and Short) that provides for the protection and treatment of persons judged to be gravely disabled and thus unable to provide food, clothing, or shelter for themselves.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        lps laws definition\n\n        Relevant Documents:\n        [DOC1]\nLPS Act. LPS Act. a California law named for sponsors of the legislation (Lanterman, Petris, and Short) that provides for the protection and treatment of persons judged to be gravely disabled and thus unable to provide food, clothing, or shelter for themselves.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The LPS (Lanterman-Petris-Short) Act is a California law that provides for the protection and treatment of individuals who are considered gravely disabled, meaning they are unable to care for their basic needs such as food, clothing, or shelter.",
+        "generation_time_seconds": "2.985511"
+    },
+    "451602": {
+        "query_text": "medicare's definition of mechanical ventilation",
+        "icl_examples": "[DOC1]\nLPS Act. LPS Act. a California law named for sponsors of the legislation (Lanterman, Petris, and Short) that provides for the protection and treatment of persons judged to be gravely disabled and thus unable to provide food, clothing, or shelter for themselves.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        medicare's definition of mechanical ventilation\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Medicare's definition of mechanical ventilation is based on the guidelines set by the Centers for Medicare and Medicaid Services (CMS). According to the CMS, mechanical ventilation is defined as a medical treatment that involves the use of a ventilator to assist or support a patient's breathing.\n\nSpecifically, CMS defines mechanical ventilation as follows:\n\n* \"The use of a ventilator or a respirator to provide respiratory support, including, but not limited to, the delivery of oxygen, positive pressure ventilation, and/or the removal of carbon dioxide from the patient's lungs.\"\n* \"The use of a ventilator to assist or support a patient's breathing, including, but not limited to, the provision of positive pressure ventilation, negative pressure ventilation, or other forms of respiratory support.\"\n\nMedicare covers mechanical ventilation when it is medically necessary and meets the following criteria:\n\n* The patient requires mechanical ventilation to support their breathing due to a medical condition or injury.\n* The patient is unable to breathe on their own due to a medical condition or injury.\n* The mechanical ventilation is provided in a hospital or skilled nursing facility (SNF) setting.\n* The patient requires ongoing medical care and supervision to ensure the safe and effective use of the ventilator.\n\nIt's worth noting that Medicare's coverage of mechanical ventilation may",
+        "generation_time_seconds": "14.107354"
+    },
+    "489204": {
+        "query_text": "right pelvic pain causes",
+        "icl_examples": "[DOC1]\nLPS Act. LPS Act. a California law named for sponsors of the legislation (Lanterman, Petris, and Short) that provides for the protection and treatment of persons judged to be gravely disabled and thus unable to provide food, clothing, or shelter for themselves.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        right pelvic pain causes\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Right pelvic pain can be caused by a variety of factors, including:\n\n1. **Kidney Stones**: Pain from kidney stones can radiate to the right lower quadrant of the abdomen and pelvic area.\n2. **Appendicitis**: Inflammation of the appendix, a small organ located near the junction of the small and large intestines, can cause severe pain on the right side of the abdomen and pelvis.\n3. **Ovarian Cysts**: Fluid-filled sacs on the ovaries can cause pelvic pain, especially on the right side.\n4. **Endometriosis**: A condition in which tissue similar to the lining of the uterus grows outside the uterus, leading to pain and inflammation in the pelvic area.\n5. **Pelvic Inflammatory Disease (PID)**: An infection of the female reproductive organs, which can cause pain and inflammation in the pelvic area.\n6. **Urinary Tract Infections (UTIs)**: Bacterial infections in the urinary tract can cause pain and discomfort in the pelvic area.\n7. **Diverticulitis**: Inflammation of the diverticula, small pouches in the wall of the colon, can cause pain and discomfort in the pelvic area.\n8. **Herniated Disc**: A",
+        "generation_time_seconds": "14.162689"
+    },
+    "490595": {
+        "query_text": "rsa definition key",
+        "icl_examples": "[DOC1]\nTHE CRYPTOGRAPHY GUIDE: RSA. RSA RSA is a public key algorithm invented by Rivest, Shamir and Adleman. The key used for encryption is different from (but related to) the key used for decryption.The algorithm is based on modular exponentiation.hen talking of key lengths in connection with RSA, what is meant is the modulus length. An algorithm that uses different keys for encryption and decryption is said to be asymmetric. Anybody knowing the public key can use it to create encrypted messages, but only the owner of the secret key can decrypt them.\n\n[DOC2]\nWhat is RSA? RSA is a public-key cryptosystem for both encryption and authentication; it was invented in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman [RSA78]. It works as follows: take two large primes, p and q, and find their product n = pq ; n is called the modulus.\n\n[DOC3]\nRivest, Shamir, and Adelman (RSA) is a public-key cryptographic system used for authentication. IKE on the Cisco router or PIX Firewall uses a D-H exchange to determine secret keys on each IPSec peer used by encryption algorithms. The D-H exchange can be authenticated with RSA signatures or preshared keys.",
+        "k_shots": 3,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        rsa definition key\n\n        Relevant Documents:\n        [DOC1]\nTHE CRYPTOGRAPHY GUIDE: RSA. RSA RSA is a public key algorithm invented by Rivest, Shamir and Adleman. The key used for encryption is different from (but related to) the key used for decryption.The algorithm is based on modular exponentiation.hen talking of key lengths in connection with RSA, what is meant is the modulus length. An algorithm that uses different keys for encryption and decryption is said to be asymmetric. Anybody knowing the public key can use it to create encrypted messages, but only the owner of the secret key can decrypt them.\n\n[DOC2]\nWhat is RSA? RSA is a public-key cryptosystem for both encryption and authentication; it was invented in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman [RSA78]. It works as follows: take two large primes, p and q, and find their product n = pq ; n is called the modulus.\n\n[DOC3]\nRivest, Shamir, and Adelman (RSA) is a public-key cryptographic system used for authentication. IKE on the Cisco router or PIX Firewall uses a D-H exchange to determine secret keys on each IPSec peer used by encryption algorithms. The D-H exchange can be authenticated with RSA signatures or preshared keys.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The RSA algorithm is a public-key cryptosystem that uses a pair of keys for encryption and decryption. The key used for encryption, also known as the public key, is different from the key used for decryption, known as the secret key. \n\nWhen referring to key lengths in connection with RSA, the term \"key length\" actually refers to the modulus length, which is the product of two large prime numbers (p and q). This modulus is used as the basis for both encryption and decryption. \n\nIn essence, RSA is an asymmetric algorithm, allowing anyone with the public key to encrypt messages, but only the owner of the secret key can decrypt them, providing a secure method for authentication and encryption.",
+        "generation_time_seconds": "9.719616"
+    },
+    "527433": {
+        "query_text": "types of dysarthria from cerebral palsy",
+        "icl_examples": "[DOC1]\nThere are three major types of dysarthria in cerebral palsy: spastic, dyskinetic (athetosis) and ataxic. Speech impairments in spastic dysarthria involves four major abnormalities of voluntary movement: spasticity, weakness, limited range of motion and slowness of movement.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        types of dysarthria from cerebral palsy\n\n        Relevant Documents:\n        [DOC1]\nThere are three major types of dysarthria in cerebral palsy: spastic, dyskinetic (athetosis) and ataxic. Speech impairments in spastic dysarthria involves four major abnormalities of voluntary movement: spasticity, weakness, limited range of motion and slowness of movement.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "There are three major types of dysarthria associated with cerebral palsy: \n\n1. **Spastic Dysarthria**: Characterized by four major abnormalities of voluntary movement, including spasticity, weakness, limited range of motion, and slowness of movement, which result in speech impairments.\n\n2. **Dyskinetic (Athetoid) Dysarthria**: This type is associated with involuntary movements and is often seen in individuals with cerebral palsy who have a history of athetosis.\n\n3. **Ataxic Dysarthria**: This type is characterized by difficulties with coordination and balance, leading to speech impairments, such as slurred or indistinct speech.\n\nThese types of dysarthria can have varying effects on an individual's speech and communication abilities.",
+        "generation_time_seconds": "8.815669"
+    },
+    "573724": {
+        "query_text": "what are the social determinants of health",
+        "icl_examples": "[DOC1]\nThere are three major types of dysarthria in cerebral palsy: spastic, dyskinetic (athetosis) and ataxic. Speech impairments in spastic dysarthria involves four major abnormalities of voluntary movement: spasticity, weakness, limited range of motion and slowness of movement.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        what are the social determinants of health\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The social determinants of health (SDOH) refer to the non-medical factors that influence an individual's health and well-being. These factors are shaped by the social and economic conditions in which people are born, grow, live, work, and age. The World Health Organization (WHO) identifies the following key social determinants of health:\n\n1. **Economic stability**: Access to stable employment, adequate income, and social protection can impact health outcomes.\n2. **Education**: Higher levels of education are associated with better health outcomes, while limited access to education can exacerbate health disparities.\n3. **Food security**: Access to nutritious food, clean water, and a safe living environment can significantly impact health.\n4. **Housing**: Stable, safe, and affordable housing is essential for physical and mental health.\n5. **Social connections**: Strong social relationships and community engagement can support mental and physical health.\n6. **Community and social environment**: Factors such as crime rates, air and water quality, and access to green spaces can impact health.\n7. **Healthcare access and quality**: Timely access to quality healthcare services, including preventive care and treatment, is critical for health outcomes.\n8. **Cultural and linguistic competence**: Healthcare providers' ability to communicate effectively",
+        "generation_time_seconds": "14.121835"
+    },
+    "833860": {
+        "query_text": "what is the most popular food in switzerland",
+        "icl_examples": "[DOC1]\nItalian cuisine is popular in contemporary Switzerland, particularly pasta and pizza. Foods often associated with Switzerland include cheese and chocolate. Swiss cheeses, in particular Emmental cheese, Gruyere, Gruyère, vacherin And, appenzeller are Famous swiss. Products the most popular cheese dishes are fondue And. racletten the Italian-speaking part of Switzerland, the Ticino area, one will find a type of restaurant unique to the region. The Grotto is a rustic eatery, offering traditional food ranging from pasta to homemade meat specialties. Popular dishes are Luganighe and Luganighetta, a type of artisan sausages.\n\n[DOC2]\n1 Pastetli-This is a popular food in Switzerland. 2  It is a meat pie with different fillings which include meat and mushrooms with cream sauce. 3  Zurcher Geschnetzeltes-This dish is Zurich style cut meat. 4  It is often served with hashed potatoes but could be served with mashed potatoes, pasta or rice.ood of Switzerland. Traditional Food in Switzerland. There are many different dishes in Switzerland that are regional. Italian food is very common in modern Switzerland including pasta and pizza. Swiss cheese includes Emmental cheese, Vacherin and Appenzeller.\n\n[DOC3]\nSwitzerland. The food of the Swiss is unusual in that it has so many regional influences from the cuisine of its neighbors. This includes the French, German and Italians. Historically, Switzerland was a farming country, and the most popular crops and foods include cheese and potatoes as well as chocolate.he food in Europe can be characterized by four categories: meats, sugar, cereals, and fats. Meats include tripe, fish, blood sausages, and wild game. Brought from India and the New World, cane sugar became a necessary ingredient in European recipes and foods.",
+        "k_shots": 3,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is the most popular food in switzerland\n\n        Relevant Documents:\n        [DOC1]\nItalian cuisine is popular in contemporary Switzerland, particularly pasta and pizza. Foods often associated with Switzerland include cheese and chocolate. Swiss cheeses, in particular Emmental cheese, Gruyere, Gruyère, vacherin And, appenzeller are Famous swiss. Products the most popular cheese dishes are fondue And. racletten the Italian-speaking part of Switzerland, the Ticino area, one will find a type of restaurant unique to the region. The Grotto is a rustic eatery, offering traditional food ranging from pasta to homemade meat specialties. Popular dishes are Luganighe and Luganighetta, a type of artisan sausages.\n\n[DOC2]\n1 Pastetli-This is a popular food in Switzerland. 2  It is a meat pie with different fillings which include meat and mushrooms with cream sauce. 3  Zurcher Geschnetzeltes-This dish is Zurich style cut meat. 4  It is often served with hashed potatoes but could be served with mashed potatoes, pasta or rice.ood of Switzerland. Traditional Food in Switzerland. There are many different dishes in Switzerland that are regional. Italian food is very common in modern Switzerland including pasta and pizza. Swiss cheese includes Emmental cheese, Vacherin and Appenzeller.\n\n[DOC3]\nSwitzerland. The food of the Swiss is unusual in that it has so many regional influences from the cuisine of its neighbors. This includes the French, German and Italians. Historically, Switzerland was a farming country, and the most popular crops and foods include cheese and potatoes as well as chocolate.he food in Europe can be characterized by four categories: meats, sugar, cereals, and fats. Meats include tripe, fish, blood sausages, and wild game. Brought from India and the New World, cane sugar became a necessary ingredient in European recipes and foods.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Based on the relevant documents provided, the most popular food in Switzerland can be considered to be cheese, particularly Swiss cheeses such as Emmental cheese, Gruyere, Vacherin, and Appenzeller. This is supported by DOC1, which lists these cheeses as \"Famous Swiss products\" and mentions that they are often used in popular cheese dishes like fondue and raclette. Additionally, DOC2 mentions Swiss cheese as a key component of traditional Swiss cuisine, and DOC3 notes that cheese is one of the most popular crops and foods in Switzerland.",
+        "generation_time_seconds": "13.270676"
+    },
+    "855410": {
+        "query_text": "what is theraderm used for",
+        "icl_examples": "[DOC1]\nItalian cuisine is popular in contemporary Switzerland, particularly pasta and pizza. Foods often associated with Switzerland include cheese and chocolate. Swiss cheeses, in particular Emmental cheese, Gruyere, Gruyère, vacherin And, appenzeller are Famous swiss. Products the most popular cheese dishes are fondue And. racletten the Italian-speaking part of Switzerland, the Ticino area, one will find a type of restaurant unique to the region. The Grotto is a rustic eatery, offering traditional food ranging from pasta to homemade meat specialties. Popular dishes are Luganighe and Luganighetta, a type of artisan sausages.\n\n[DOC2]\n1 Pastetli-This is a popular food in Switzerland. 2  It is a meat pie with different fillings which include meat and mushrooms with cream sauce. 3  Zurcher Geschnetzeltes-This dish is Zurich style cut meat. 4  It is often served with hashed potatoes but could be served with mashed potatoes, pasta or rice.ood of Switzerland. Traditional Food in Switzerland. There are many different dishes in Switzerland that are regional. Italian food is very common in modern Switzerland including pasta and pizza. Swiss cheese includes Emmental cheese, Vacherin and Appenzeller.\n\n[DOC3]\nSwitzerland. The food of the Swiss is unusual in that it has so many regional influences from the cuisine of its neighbors. This includes the French, German and Italians. Historically, Switzerland was a farming country, and the most popular crops and foods include cheese and potatoes as well as chocolate.he food in Europe can be characterized by four categories: meats, sugar, cereals, and fats. Meats include tripe, fish, blood sausages, and wild game. Brought from India and the New World, cane sugar became a necessary ingredient in European recipes and foods.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        what is theraderm used for\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Theraderm is a topical skin cream used for a variety of purposes, primarily to treat and manage various skin conditions. The main uses of Theraderm include:\n\n1. **Skin rejuvenation**: Theraderm helps to improve skin texture, reduce fine lines and wrinkles, and promote collagen production, giving the skin a more youthful appearance.\n2. **Acne treatment**: The cream's active ingredients, such as salicylic acid and glycolic acid, help to unclog pores, reduce inflammation, and prevent future breakouts.\n3. **Scar treatment**: Theraderm can be used to reduce the appearance of scars, including acne scars, surgical scars, and burn scars, by promoting collagen production and improving skin texture.\n4. **Wound healing**: The cream's antimicrobial and anti-inflammatory properties help to promote wound healing, reduce the risk of infection, and minimize scarring.\n5. **Skin conditions**: Theraderm may also be used to treat other skin conditions, such as psoriasis, eczema, and rosacea, by reducing inflammation, promoting skin regeneration, and improving skin texture.\n\nOverall, Theraderm is a versatile topical cream that can be used to address a range of skin concerns and promote overall skin health.",
+        "generation_time_seconds": "14.011403"
+    },
+    "915593": {
+        "query_text": "what types of food can you cook sous vide",
+        "icl_examples": "[DOC1]\nAll kinds! Any type of meat—such as beef, pork, lamb, game, or poultry—is ideal for sous vide. It works especially well with fish and seafood, ensuring that these delicate foods are not overcooked. Almost any vegetable can also be cooked sous vide with delicious results, as can eggs and many fruits. You can even use it to make custard-style ice cream base, béarnaise sauce, crème Anglaise, custards, cheese, yogurt, and even cakes.\n\n[DOC2]\nWhat kind of foods can you cook sous vide? Sous vide is traditionally seen as an alternative method for cooking meats. However, the technique is extremely versatile, meaning all manner of ingredients can be cooked such as: Pork, Lamb, Beef, Chicken, Duck, Turkey, Quail.\n\n[DOC3]\nOften, however, when you prepare food sous vide you’re packaging the food in plastic. (Often but not always. Eggs come in their own wrappers—their shells—and we can sous vide foods that set as they cook, like custard, yogurt, and chicken liver pâté, in glass canning jars.)",
+        "k_shots": 3,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what types of food can you cook sous vide\n\n        Relevant Documents:\n        [DOC1]\nAll kinds! Any type of meat—such as beef, pork, lamb, game, or poultry—is ideal for sous vide. It works especially well with fish and seafood, ensuring that these delicate foods are not overcooked. Almost any vegetable can also be cooked sous vide with delicious results, as can eggs and many fruits. You can even use it to make custard-style ice cream base, béarnaise sauce, crème Anglaise, custards, cheese, yogurt, and even cakes.\n\n[DOC2]\nWhat kind of foods can you cook sous vide? Sous vide is traditionally seen as an alternative method for cooking meats. However, the technique is extremely versatile, meaning all manner of ingredients can be cooked such as: Pork, Lamb, Beef, Chicken, Duck, Turkey, Quail.\n\n[DOC3]\nOften, however, when you prepare food sous vide you’re packaging the food in plastic. (Often but not always. Eggs come in their own wrappers—their shells—and we can sous vide foods that set as they cook, like custard, yogurt, and chicken liver pâté, in glass canning jars.)\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "You can cook a wide variety of foods sous vide, including:\n\n- Meats: beef, pork, lamb, game, poultry, duck, turkey, quail, and chicken\n- Fish and seafood\n- Vegetables\n- Eggs\n- Fruits\n- Dairy products: cheese, yogurt, custard, and crème Anglaise\n- Desserts: custard-style ice cream base, cakes, and chicken liver pâté\n\nSous vide cooking allows for precise temperature control, ensuring that delicate foods like fish and seafood are not overcooked, and can be used to cook a wide range of ingredients with delicious results.",
+        "generation_time_seconds": "8.730746"
+    },
+    "962179": {
+        "query_text": "when was the salvation army founded",
+        "icl_examples": "[DOC1]\nThe Salvation Army was founded in London’s East End in 1865 by one-time Methodist minister William Booth and his wife Catherine. Originally, Booth named the organization the East London Christian Mission.\n\n[DOC2]\nThe Salvation Army was founded in London's East End in 1865 by one-time Methodist Reform Church minister William Booth and his wife Catherine. Originally, Booth named the organisation the East London Christian Mission.",
+        "k_shots": 2,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        when was the salvation army founded\n\n        Relevant Documents:\n        [DOC1]\nThe Salvation Army was founded in London’s East End in 1865 by one-time Methodist minister William Booth and his wife Catherine. Originally, Booth named the organization the East London Christian Mission.\n\n[DOC2]\nThe Salvation Army was founded in London's East End in 1865 by one-time Methodist Reform Church minister William Booth and his wife Catherine. Originally, Booth named the organisation the East London Christian Mission.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The Salvation Army was founded in 1865 by William Booth and his wife Catherine in London's East End.",
+        "generation_time_seconds": "1.288665"
+    },
+    "1037798": {
+        "query_text": "who is robert gray",
+        "icl_examples": "[DOC1]\nCaptain Robert Gray, May 1972. Discovering the Columbia River, May 1792 ... The Columbia River was given the name it bears today in May 1792, by American Captain Robert Gray, after his ship, the Columbia Rediviva. On May 11, 1792, Captain Robert Gray entered the mouth of the Columbia River. He explored 20 miles up the river as far as Grays Bay, a bay named for him later in the year by Lieutenant William Broughton of the Vancouver Expedition, who crossed the bar and traveled 100 miles up the Columbia.\n\n[DOC2]\nAtlantic Ocean, United States. Robert Gray, (born May 10, 1755, Tiverton, R.I.—died summer 1806, at sea near eastern U.S. coast) captain of the first U.S. ship to circumnavigate the globe and explorer of the Columbia River.",
+        "k_shots": 2,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        who is robert gray\n\n        Relevant Documents:\n        [DOC1]\nCaptain Robert Gray, May 1972. Discovering the Columbia River, May 1792 ... The Columbia River was given the name it bears today in May 1792, by American Captain Robert Gray, after his ship, the Columbia Rediviva. On May 11, 1792, Captain Robert Gray entered the mouth of the Columbia River. He explored 20 miles up the river as far as Grays Bay, a bay named for him later in the year by Lieutenant William Broughton of the Vancouver Expedition, who crossed the bar and traveled 100 miles up the Columbia.\n\n[DOC2]\nAtlantic Ocean, United States. Robert Gray, (born May 10, 1755, Tiverton, R.I.—died summer 1806, at sea near eastern U.S. coast) captain of the first U.S. ship to circumnavigate the globe and explorer of the Columbia River.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Robert Gray was an American captain, born on May 10, 1755, in Tiverton, Rhode Island. He is best known for being the captain of the first U.S. ship to circumnavigate the globe and for discovering and naming the Columbia River in 1792, after which the river and several other geographical features were later named after him.",
+        "generation_time_seconds": "5.570948"
+    },
+    "1063750": {
+        "query_text": "why did the us volunterilay enter ww1",
+        "icl_examples": "[DOC1]\nCaptain Robert Gray, May 1972. Discovering the Columbia River, May 1792 ... The Columbia River was given the name it bears today in May 1792, by American Captain Robert Gray, after his ship, the Columbia Rediviva. On May 11, 1792, Captain Robert Gray entered the mouth of the Columbia River. He explored 20 miles up the river as far as Grays Bay, a bay named for him later in the year by Lieutenant William Broughton of the Vancouver Expedition, who crossed the bar and traveled 100 miles up the Columbia.\n\n[DOC2]\nAtlantic Ocean, United States. Robert Gray, (born May 10, 1755, Tiverton, R.I.—died summer 1806, at sea near eastern U.S. coast) captain of the first U.S. ship to circumnavigate the globe and explorer of the Columbia River.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        why did the us volunterilay enter ww1\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The United States' voluntary entry into World War I was a complex and multifaceted process. Initially, the US maintained a policy of neutrality, avoiding involvement in the conflict between the Allied Powers (France, Britain, and Russia) and the Central Powers (Germany, Austria-Hungary, and the Ottoman Empire).\n\nHowever, several key events and factors eventually led to the US's entry into the war:\n\n1. **Sinking of the Lusitania (May 1915)**: Germany's U-boat torpedoed the British passenger ship Lusitania, killing over 1,000 civilians, including 128 Americans. This incident outraged the US public and put pressure on the government to take action.\n2. **Germany's resumption of unrestricted submarine warfare (February 1917)**: Germany resumed its policy of attacking all ships, including neutral US vessels, in an effort to blockade Britain. This move was seen as a direct threat to US shipping and trade interests.\n3. **The Zimmermann Telegram (January 1917)**: Germany sent a coded message to Mexico, urging it to declare war on the US in the event of American entry into World War I. The telegram was intercepted by British intelligence and passed on to the US, further straining",
+        "generation_time_seconds": "14.085505"
+    },
+    "1103812": {
+        "query_text": "who formed the commonwealth of independent states",
+        "icl_examples": "[DOC1]\nThe Commonwealth of Independent States (CIS; Russian: содружество независимых государств, снг, tr. Sodruzhestvo Nezavisimykh Gosudarstv, SNG), also called the Russian Commonwealth (to distinguish it from the British Commonwealth of Nations), is a regional organization formed during the dissolution of the Soviet Union.\n\n[DOC2]\nThe Commonwealth of Independent States (CIS) is the international organization, or alliance of countries that used to form the Soviet Union. On December 8 1991, leaders of Russia, Belarus, and Ukraine met at the nature reserve called Belovezhskaya Pushcha in Belarus. They discussed the creation of the Commonwealth of Independent States (CIS). They reached an agreement about many points and signed a document creating the CIS. One of these points stated that the alliance would be open to all the republics of the Soviet Union.\n\n[DOC3]\ncommonwealth of independent states The Commonwealth of Independent States (CIS) was established on December 8, 1991, in the Belovezh Accords, which also brought an end to the Soviet Union.",
+        "k_shots": 3,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        who formed the commonwealth of independent states\n\n        Relevant Documents:\n        [DOC1]\nThe Commonwealth of Independent States (CIS; Russian: содружество независимых государств, снг, tr. Sodruzhestvo Nezavisimykh Gosudarstv, SNG), also called the Russian Commonwealth (to distinguish it from the British Commonwealth of Nations), is a regional organization formed during the dissolution of the Soviet Union.\n\n[DOC2]\nThe Commonwealth of Independent States (CIS) is the international organization, or alliance of countries that used to form the Soviet Union. On December 8 1991, leaders of Russia, Belarus, and Ukraine met at the nature reserve called Belovezhskaya Pushcha in Belarus. They discussed the creation of the Commonwealth of Independent States (CIS). They reached an agreement about many points and signed a document creating the CIS. One of these points stated that the alliance would be open to all the republics of the Soviet Union.\n\n[DOC3]\ncommonwealth of independent states The Commonwealth of Independent States (CIS) was established on December 8, 1991, in the Belovezh Accords, which also brought an end to the Soviet Union.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The Commonwealth of Independent States (CIS) was formed by the leaders of Russia, Belarus, and Ukraine on December 8, 1991, at the Belovezhskaya Pushcha nature reserve in Belarus. They signed a document creating the CIS, which was an open alliance for all the republics of the Soviet Union.",
+        "generation_time_seconds": "5.323378"
+    },
+    "1106007": {
+        "query_text": "define visceral?",
+        "icl_examples": "[DOC1]\nDefinition of visceral for English Language Learners. : 1  coming from strong emotions and not from logic or reason. 2  medical : of or relating to the viscera.\n\n[DOC2]\nDefine visceral: felt in or as if in the internal organs of the body : deep; not intellectual : instinctive, unreasoning — visceral in a sentence\n\n[DOC3]\nDefinition of visceral. 1 : felt in or as if in the internal organs of the body : deep a visceral conviction. 2 : not intellectual : instinctive, unreasoning visceral drives. 3 : dealing with crude or elemental emotions : earthy a visceral novel.\n\n[DOC4]\nvisceral adjective (EMOTIONAL) › literary based on deep feeling and emotional reactions rather than on reason or thought: visceral hatred/excitement. His approach to acting is visceral rather than intellectual. Thesaurus: synonyms and related words.\n\n[DOC5]\nvisceral adjective (EMOTIONAL) › 1  literary based on deep feeling and emotional reactions rather than on reason or thought: › 2  specialized relating to the large organs inside the body, including the heart, stomach, lungs, and intestines. › 3  based on emotional reactions rather than on reason or thought:",
+        "k_shots": 5,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        define visceral?\n\n        Relevant Documents:\n        [DOC1]\nDefinition of visceral for English Language Learners. : 1  coming from strong emotions and not from logic or reason. 2  medical : of or relating to the viscera.\n\n[DOC2]\nDefine visceral: felt in or as if in the internal organs of the body : deep; not intellectual : instinctive, unreasoning — visceral in a sentence\n\n[DOC3]\nDefinition of visceral. 1 : felt in or as if in the internal organs of the body : deep a visceral conviction. 2 : not intellectual : instinctive, unreasoning visceral drives. 3 : dealing with crude or elemental emotions : earthy a visceral novel.\n\n[DOC4]\nvisceral adjective (EMOTIONAL) › literary based on deep feeling and emotional reactions rather than on reason or thought: visceral hatred/excitement. His approach to acting is visceral rather than intellectual. Thesaurus: synonyms and related words.\n\n[DOC5]\nvisceral adjective (EMOTIONAL) › 1  literary based on deep feeling and emotional reactions rather than on reason or thought: › 2  specialized relating to the large organs inside the body, including the heart, stomach, lungs, and intestines. › 3  based on emotional reactions rather than on reason or thought:\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The term \"visceral\" refers to strong emotions and reactions that come from within, rather than from logic or reason. It can be described as deep, instinctive, and unreasoning, often associated with emotional responses that are not intellectual in nature. In a broader sense, visceral can also relate to the internal organs of the body, particularly in a medical context. In literature, the term is used to describe works that evoke strong emotional reactions, often through crude or elemental emotions. Overall, visceral encompasses a range of meanings that emphasize the role of emotions and instinct in human experience.",
+        "generation_time_seconds": "8.262593"
+    },
+    "1110199": {
+        "query_text": "what is wifi vs bluetooth",
+        "icl_examples": "[DOC1]\nWi-Fi and Bluetooth are to some extent complementary in their applications and usage. Wi-Fi is usually access point-centered, with an asymmetrical client-server connection with all traffic routed through the access point, while Bluetooth is usually symmetrical, between two Bluetooth devices.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is wifi vs bluetooth\n\n        Relevant Documents:\n        [DOC1]\nWi-Fi and Bluetooth are to some extent complementary in their applications and usage. Wi-Fi is usually access point-centered, with an asymmetrical client-server connection with all traffic routed through the access point, while Bluetooth is usually symmetrical, between two Bluetooth devices.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Wi-Fi and Bluetooth are two distinct wireless technologies that serve different purposes. Wi-Fi is primarily used for connecting devices to the internet or to a local network, typically through an access point, and is characterized by an asymmetrical client-server connection. On the other hand, Bluetooth is designed for short-range communication between two devices, often used for transferring files, streaming audio, or connecting peripherals, and operates in a symmetrical manner.\n\nThis answer is supported by the relevant document [DOC1], which states that Wi-Fi and Bluetooth have complementary applications and usage, with Wi-Fi being access point-centered and Bluetooth being symmetrical between two devices.",
+        "generation_time_seconds": "6.974090"
+    },
+    "1112341": {
+        "query_text": "what is the daily life of thai people",
+        "icl_examples": "[DOC1]\nAn important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons.\n\n[DOC2]\nA n important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons. When coming back from business, Thai people often ask was it fun ?\n\n[DOC3]\nThe following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation.\n\n[DOC4]\nT he following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation. T hai people are educated in the family and in school to keep frustration inside. Instead of showing their anger toward a problem or situation, Thai people show JAI YEN, i.e. calm or patience.",
+        "k_shots": 4,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is the daily life of thai people\n\n        Relevant Documents:\n        [DOC1]\nAn important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons.\n\n[DOC2]\nA n important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons. When coming back from business, Thai people often ask was it fun ?\n\n[DOC3]\nThe following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation.\n\n[DOC4]\nT he following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation. T hai people are educated in the family and in school to keep frustration inside. Instead of showing their anger toward a problem or situation, Thai people show JAI YEN, i.e. calm or patience.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The daily life of Thai people is characterized by several key aspects. One of the most important things in their everyday life is the concept of \"SANUK,\" which represents having fun and enjoying time with friends and family. This can involve eating together, socializing, and going out with friends. Thai people often prioritize having fun and making the most of their time with others.\n\nAnother essential aspect of Thai daily life is the value of \"ใจเย็น\" or \"JAI YEN,\" which translates to keeping a calm and patient temper, regardless of the situation. This cultural value is instilled in Thai people from a young age, both in the family and in school, as a way to manage frustration and anger. Instead of expressing anger or frustration, Thai people are encouraged to show \"JAI YEN,\" which means maintaining a calm and peaceful demeanor. This emphasis on calmness and patience is a core part of Thai culture and contributes to the overall relaxed and social nature of Thai daily life.",
+        "generation_time_seconds": "13.481852"
+    },
+    "1113437": {
+        "query_text": "what is physical description of spruce",
+        "icl_examples": "[DOC1]\nAn important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons.\n\n[DOC2]\nA n important thing in everyday life is SANUK. Thai people love to have fun together. SANUK can represent many things : eat together, to be with friends and chat, to go out with friends. For Thai people SANUK happens with several persons. When coming back from business, Thai people often ask was it fun ?\n\n[DOC3]\nThe following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation.\n\n[DOC4]\nT he following concepts are part of Thai everyday life: ใจเย็น or JAI YEN is more a way of life, it is to keep your temper whatever the situation. T hai people are educated in the family and in school to keep frustration inside. Instead of showing their anger toward a problem or situation, Thai people show JAI YEN, i.e. calm or patience.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        what is physical description of spruce\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "A spruce tree is typically characterized by the following physical description:\n\n* Height: Spruce trees can grow to varying heights, but most species range from 30 to 60 meters (100 to 200 feet) tall, with some species reaching heights of up to 80 meters (262 feet).\n* Trunk: The trunk of a spruce tree is usually straight, cylindrical, and often has a conical shape. It can range in diameter from 30 to 150 centimeters (12 to 59 inches).\n* Bark: The bark of a spruce tree is typically smooth, gray, and often has resin blisters or ridges. As the tree ages, the bark becomes rougher and more fibrous.\n* Needles: Spruce trees have needle-like leaves that are usually 2-5 centimeters (0.8-2 inches) long, with four to eight needles per fascicle (a bundle of needles). The needles are dark green on top and light green or white on the bottom.\n* Branches: The branches of a spruce tree are often drooping and horizontal, with a characteristic \"weeping\" shape. The branches are usually covered in a thick layer of needles.\n* Cones: Spruce trees produce cones that are",
+        "generation_time_seconds": "14.060638"
+    },
+    "1114646": {
+        "query_text": "what is famvir prescribed for",
+        "icl_examples": "[DOC1]\nFamciclovir (Famvir) is sometimes used to treat the herpes virus that causes cold sores and genital herpes (as well as the virus that causes shingles). This medicine is available only by prescription and is taken orally in tablet form.\n\n[DOC2]\nFamciclovir (Famvir) is a drug used for the treatment of genital herpes, cold sores, shingles, and chickenpox. Side effects, drug interactions, warnings and precautions, and pregnancy information should be reviewed prior to taking this medication.\n\n[DOC3]\nFamvir (Famciclovir) is approved by the FDA for the treatment of cold sores. If started at the first sign of symptoms, taking a single high dose of Famvir can shorten the herpes infection by two days. Valtrex (Valacyclovir) is also approved by the FDA to treat cold sores.\n\n[DOC4]\nFamciclovir (Famvir®) is a prescription antiviral medication used to treat the following conditions: Herpes simplex infections (including cold sores and genital herpes) in people with HIV or other conditions that weaken the immune system.\n\n[DOC5]\nFamciclovir (Famvir®) is a prescription antiviral medication used to treat the following conditions: Shingles in people with normal immune systems. Recurring genital herpes in people with normal immune systems. Recurring cold sores in people with normal immune systems.",
+        "k_shots": 5,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is famvir prescribed for\n\n        Relevant Documents:\n        [DOC1]\nFamciclovir (Famvir) is sometimes used to treat the herpes virus that causes cold sores and genital herpes (as well as the virus that causes shingles). This medicine is available only by prescription and is taken orally in tablet form.\n\n[DOC2]\nFamciclovir (Famvir) is a drug used for the treatment of genital herpes, cold sores, shingles, and chickenpox. Side effects, drug interactions, warnings and precautions, and pregnancy information should be reviewed prior to taking this medication.\n\n[DOC3]\nFamvir (Famciclovir) is approved by the FDA for the treatment of cold sores. If started at the first sign of symptoms, taking a single high dose of Famvir can shorten the herpes infection by two days. Valtrex (Valacyclovir) is also approved by the FDA to treat cold sores.\n\n[DOC4]\nFamciclovir (Famvir®) is a prescription antiviral medication used to treat the following conditions: Herpes simplex infections (including cold sores and genital herpes) in people with HIV or other conditions that weaken the immune system.\n\n[DOC5]\nFamciclovir (Famvir®) is a prescription antiviral medication used to treat the following conditions: Shingles in people with normal immune systems. Recurring genital herpes in people with normal immune systems. Recurring cold sores in people with normal immune systems.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Famvir (Famciclovir) is a prescription medication that is primarily used to treat several conditions caused by the herpes virus. These conditions include:\n\n1. Genital herpes: Famvir is prescribed to treat genital herpes in individuals with normal or weakened immune systems.\n2. Cold sores: Famvir can be used to treat cold sores, and taking a single high dose of the medication at the first sign of symptoms can help shorten the duration of the infection by two days.\n3. Shingles: Famvir is approved by the FDA for the treatment of shingles in individuals with normal immune systems.\n4. Herpes simplex infections: Famvir is also used to treat herpes simplex infections in people with weakened immune systems, including those with HIV.\n\nIt is essential to consult a healthcare professional before taking Famvir, as they can provide personalized advice and ensure that the medication is suitable for the individual's specific condition and health status.",
+        "generation_time_seconds": "14.190267"
+    },
+    "1114819": {
+        "query_text": "what is durable medical equipment consist of",
+        "icl_examples": "[DOC1]\nDurable medical equipment. Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: are primarily and customarily used to serve a medical purpose; are not useful to a person in the absence of illness, disability, or injury; are ordered or prescribed by a physician; are reusable; can stand repeated use, and are appropriate for use in the home.\n\n[DOC2]\nA durable medical equipment business is a company that sells health care related items intended for use in the home for an extended period. Products such as wheelchairs, hospital beds, glucose monitors and nebulizers are considered durable medical equipment, and are often covered by insurance plans and Medicare provided that the equipment is intended for long-term use.\n\n[DOC3]\n(Learn how and when to remove these template messages) Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness, disability, or injury; 3  are ordered or prescribed by a physician;  are 1  reusable; can stand repeated use, 2  and. are appropriate for use in the  home.\n\n[DOC4]\n(December 2012). The standard definition of Durable Medical Equipment used by insurance companies is:Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.\n\n[DOC5]\n(December 2012). The standard definition of Durable Medical Equipment used by insurance companies is:Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses.Durable Medical Equipment (DME) consists of items which:1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.urable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician;\n\n[DOC6]\nDurable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness, disability, or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.",
+        "k_shots": 6,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is durable medical equipment consist of\n\n        Relevant Documents:\n        [DOC1]\nDurable medical equipment. Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: are primarily and customarily used to serve a medical purpose; are not useful to a person in the absence of illness, disability, or injury; are ordered or prescribed by a physician; are reusable; can stand repeated use, and are appropriate for use in the home.\n\n[DOC2]\nA durable medical equipment business is a company that sells health care related items intended for use in the home for an extended period. Products such as wheelchairs, hospital beds, glucose monitors and nebulizers are considered durable medical equipment, and are often covered by insurance plans and Medicare provided that the equipment is intended for long-term use.\n\n[DOC3]\n(Learn how and when to remove these template messages) Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness, disability, or injury; 3  are ordered or prescribed by a physician;  are 1  reusable; can stand repeated use, 2  and. are appropriate for use in the  home.\n\n[DOC4]\n(December 2012). The standard definition of Durable Medical Equipment used by insurance companies is:Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.\n\n[DOC5]\n(December 2012). The standard definition of Durable Medical Equipment used by insurance companies is:Durable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses.Durable Medical Equipment (DME) consists of items which:1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.urable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness or injury; 3  are ordered or prescribed by a physician;\n\n[DOC6]\nDurable Medical Equipment (DME) is any equipment that provides therapeutic benefits to a patient in need because of certain medical conditions and/or illnesses. Durable Medical Equipment (DME) consists of items which: 1  are primarily and customarily used to serve a medical purpose; 2  are not useful to a person in the absence of illness, disability, or injury; 3  are ordered or prescribed by a physician; 4  are reusable; 5  can stand repeated use, and. 6  are appropriate for use in the home.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Durable Medical Equipment (DME) consists of items that are primarily and customarily used to serve a medical purpose, are not useful to a person in the absence of illness, disability, or injury, are ordered or prescribed by a physician, are reusable, can stand repeated use, and are appropriate for use in the home. Examples of DME include wheelchairs, hospital beds, glucose monitors, nebulizers, and other health care-related items intended for use in the home for an extended period. These items are often covered by insurance plans and Medicare, provided that the equipment is intended for long-term use.",
+        "generation_time_seconds": "17.346160"
+    },
+    "1115776": {
+        "query_text": "what is an aml surveillance analyst",
+        "icl_examples": "[DOC1]\nAML Analysts are responsible for detecting and monitoring suspicious transactions in an effort to prevent money laundering. A typical AML Analyst resume usually describes duties such as implementing anti money laundering procedures, assessing daily financial activity, and preparing regular reports to AML Compliance Officers.",
+        "k_shots": 1,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is an aml surveillance analyst\n\n        Relevant Documents:\n        [DOC1]\nAML Analysts are responsible for detecting and monitoring suspicious transactions in an effort to prevent money laundering. A typical AML Analyst resume usually describes duties such as implementing anti money laundering procedures, assessing daily financial activity, and preparing regular reports to AML Compliance Officers.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "An AML (Anti-Money Laundering) Surveillance Analyst is a professional responsible for detecting and monitoring suspicious transactions to prevent money laundering. Their key duties typically include implementing anti-money laundering procedures, assessing daily financial activity, and preparing regular reports to AML Compliance Officers. This role is crucial in identifying and mitigating potential financial crimes, ensuring compliance with regulatory requirements, and maintaining the integrity of financial systems.",
+        "generation_time_seconds": "4.564530"
+    },
+    "1117099": {
+        "query_text": "what is a active margin",
+        "icl_examples": "[DOC1]\n• Pacific = Active Margin geologic activity 11 The ocean floor can be classified as (a) Continental Margins –the submerged outer edge of a continent (b) Ocean Basin – the deep seafloor beyond the continental margin There are two types of continental Margins (a)passive or trailing margins: margin of continent that moves away from spreading center – Atlantic-style margins (also Artic Ocean, Antarctica and Indian Ocean). Very little volcanic or earthquake activity is associated with passive margins. (b) active or leading margins: plate boundary located along a continental margin – ocean trenches where there is subduction of oceanic lithosphere – narrow, steep, with volcanic mountains (West Coast of the Americas). Active margins are the site of volcanic and earthquake activity. 12 Continental Margins\n\n[DOC2]\nActive Margins. occur where oceanic lithosphere is being subducted beneath the edge of the continent. the result is a relatively narrow margin that consists of highly deformed sediment that was scraped from the decending lithospheric slab and plastered against the margin of the overriding continent.\n\n[DOC3]\nBest Answer: An active margin is a tectonic plate boundary, a passive margin is a compositional transition within a tectonic plate. As you probably know the theory of plate tectonics posits the outer layer of the Earth consist of plates which move relative to each other driven by convection in the Mantle.\n\n[DOC4]\nActive continental margin: A continental margin that has a very narrow, or even nonexistent, continental shelf and a narrow and steep continental slope that ends in a deep trench instead of a continental rise; it is marked by earthquake and volcanic activity.",
+        "k_shots": 4,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        what is a active margin\n\n        Relevant Documents:\n        [DOC1]\n• Pacific = Active Margin geologic activity 11 The ocean floor can be classified as (a) Continental Margins –the submerged outer edge of a continent (b) Ocean Basin – the deep seafloor beyond the continental margin There are two types of continental Margins (a)passive or trailing margins: margin of continent that moves away from spreading center – Atlantic-style margins (also Artic Ocean, Antarctica and Indian Ocean). Very little volcanic or earthquake activity is associated with passive margins. (b) active or leading margins: plate boundary located along a continental margin – ocean trenches where there is subduction of oceanic lithosphere – narrow, steep, with volcanic mountains (West Coast of the Americas). Active margins are the site of volcanic and earthquake activity. 12 Continental Margins\n\n[DOC2]\nActive Margins. occur where oceanic lithosphere is being subducted beneath the edge of the continent. the result is a relatively narrow margin that consists of highly deformed sediment that was scraped from the decending lithospheric slab and plastered against the margin of the overriding continent.\n\n[DOC3]\nBest Answer: An active margin is a tectonic plate boundary, a passive margin is a compositional transition within a tectonic plate. As you probably know the theory of plate tectonics posits the outer layer of the Earth consist of plates which move relative to each other driven by convection in the Mantle.\n\n[DOC4]\nActive continental margin: A continental margin that has a very narrow, or even nonexistent, continental shelf and a narrow and steep continental slope that ends in a deep trench instead of a continental rise; it is marked by earthquake and volcanic activity.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "An active margin refers to a tectonic plate boundary where the oceanic lithosphere is being subducted beneath the edge of a continent, resulting in a relatively narrow margin with characteristics such as highly deformed sediment, volcanic mountains, and significant earthquake and volcanic activity. This type of margin is typically marked by a narrow and steep continental slope that ends in a deep trench, rather than a continental rise. It is also associated with significant geological activity, including volcanic and earthquake events.",
+        "generation_time_seconds": "8.122706"
+    },
+    "1121402": {
+        "query_text": "what can contour plowing reduce",
+        "icl_examples": "[DOC1]\n• Pacific = Active Margin geologic activity 11 The ocean floor can be classified as (a) Continental Margins –the submerged outer edge of a continent (b) Ocean Basin – the deep seafloor beyond the continental margin There are two types of continental Margins (a)passive or trailing margins: margin of continent that moves away from spreading center – Atlantic-style margins (also Artic Ocean, Antarctica and Indian Ocean). Very little volcanic or earthquake activity is associated with passive margins. (b) active or leading margins: plate boundary located along a continental margin – ocean trenches where there is subduction of oceanic lithosphere – narrow, steep, with volcanic mountains (West Coast of the Americas). Active margins are the site of volcanic and earthquake activity. 12 Continental Margins\n\n[DOC2]\nActive Margins. occur where oceanic lithosphere is being subducted beneath the edge of the continent. the result is a relatively narrow margin that consists of highly deformed sediment that was scraped from the decending lithospheric slab and plastered against the margin of the overriding continent.\n\n[DOC3]\nBest Answer: An active margin is a tectonic plate boundary, a passive margin is a compositional transition within a tectonic plate. As you probably know the theory of plate tectonics posits the outer layer of the Earth consist of plates which move relative to each other driven by convection in the Mantle.\n\n[DOC4]\nActive continental margin: A continental margin that has a very narrow, or even nonexistent, continental shelf and a narrow and steep continental slope that ends in a deep trench instead of a continental rise; it is marked by earthquake and volcanic activity.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        what can contour plowing reduce\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Contour plowing is a farming technique that involves plowing fields in a way that follows the natural slope of the land. This method can reduce soil erosion by:\n\n* Reducing the risk of soil runoff and sedimentation in waterways\n* Preventing soil compaction and nutrient loss\n* Preserving soil moisture and reducing the need for irrigation\n* Minimizing the impact of heavy rainfall on the soil\n* Maintaining soil fertility and structure\n* Reducing the need for costly soil conservation measures.",
+        "generation_time_seconds": "5.699376"
+    },
+    "1121709": {
+        "query_text": "what are the three percenters?",
+        "icl_examples": "[DOC1]\n• Pacific = Active Margin geologic activity 11 The ocean floor can be classified as (a) Continental Margins –the submerged outer edge of a continent (b) Ocean Basin – the deep seafloor beyond the continental margin There are two types of continental Margins (a)passive or trailing margins: margin of continent that moves away from spreading center – Atlantic-style margins (also Artic Ocean, Antarctica and Indian Ocean). Very little volcanic or earthquake activity is associated with passive margins. (b) active or leading margins: plate boundary located along a continental margin – ocean trenches where there is subduction of oceanic lithosphere – narrow, steep, with volcanic mountains (West Coast of the Americas). Active margins are the site of volcanic and earthquake activity. 12 Continental Margins\n\n[DOC2]\nActive Margins. occur where oceanic lithosphere is being subducted beneath the edge of the continent. the result is a relatively narrow margin that consists of highly deformed sediment that was scraped from the decending lithospheric slab and plastered against the margin of the overriding continent.\n\n[DOC3]\nBest Answer: An active margin is a tectonic plate boundary, a passive margin is a compositional transition within a tectonic plate. As you probably know the theory of plate tectonics posits the outer layer of the Earth consist of plates which move relative to each other driven by convection in the Mantle.\n\n[DOC4]\nActive continental margin: A continental margin that has a very narrow, or even nonexistent, continental shelf and a narrow and steep continental slope that ends in a deep trench instead of a continental rise; it is marked by earthquake and volcanic activity.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        what are the three percenters?\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "The Three Percenters, also known as the III% or 3%ers, are a far-right, anti-government militia movement in the United States. The group's name is derived from the idea that 3% of the American colonists participated in the American Revolutionary War, which they see as a symbol of resistance against tyranny.\n\nThe Three Percenters movement emerged in the early 2000s, primarily on the internet, and gained popularity in the aftermath of the 2008 presidential election. They are known for their antigovernment and anti-tax views, as well as their support for gun rights and opposition to what they see as government overreach.\n\nThe group's ideology is often described as a mix of libertarianism, conservatism, and anti-authoritarianism. They believe in the importance of individual liberty and the need for citizens to be prepared to defend themselves against what they see as an oppressive government.\n\nIn recent years, the Three Percenters have been associated with several high-profile incidents, including the 2014 Bundy standoff in Nevada and the 2016 Oregon occupation of the Malheur National Wildlife Refuge. They have also been linked to several violent incidents, including the 2018 Pittsburgh synagogue shooting and the 2020 United States Capitol attack.\n\nIt's worth noting that",
+        "generation_time_seconds": "14.111892"
+    },
+    "1124210": {
+        "query_text": "tracheids are part of _____.",
+        "icl_examples": "[DOC1]\n• Pacific = Active Margin geologic activity 11 The ocean floor can be classified as (a) Continental Margins –the submerged outer edge of a continent (b) Ocean Basin – the deep seafloor beyond the continental margin There are two types of continental Margins (a)passive or trailing margins: margin of continent that moves away from spreading center – Atlantic-style margins (also Artic Ocean, Antarctica and Indian Ocean). Very little volcanic or earthquake activity is associated with passive margins. (b) active or leading margins: plate boundary located along a continental margin – ocean trenches where there is subduction of oceanic lithosphere – narrow, steep, with volcanic mountains (West Coast of the Americas). Active margins are the site of volcanic and earthquake activity. 12 Continental Margins\n\n[DOC2]\nActive Margins. occur where oceanic lithosphere is being subducted beneath the edge of the continent. the result is a relatively narrow margin that consists of highly deformed sediment that was scraped from the decending lithospheric slab and plastered against the margin of the overriding continent.\n\n[DOC3]\nBest Answer: An active margin is a tectonic plate boundary, a passive margin is a compositional transition within a tectonic plate. As you probably know the theory of plate tectonics posits the outer layer of the Earth consist of plates which move relative to each other driven by convection in the Mantle.\n\n[DOC4]\nActive continental margin: A continental margin that has a very narrow, or even nonexistent, continental shelf and a narrow and steep continental slope that ends in a deep trench instead of a continental rise; it is marked by earthquake and volcanic activity.",
+        "k_shots": 0,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        Query:\n        tracheids are part of _____.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Tracheids are part of xylem.",
+        "generation_time_seconds": "0.624403"
+    },
+    "1129237": {
+        "query_text": "hydrogen is a liquid below what temperature",
+        "icl_examples": "[DOC1]\nGas. For hydrogen to become a liquid, you need to cool it down to 20.28 K, which is -252.87 degrees Celcius, or -434.45 degrees Fahrenheit if that is more your style. 6 people found this useful.\n\n[DOC2]\nHydrogen is a colorless, odorless, tasteless gas. Its density is the lowest of any chemical element, 0.08999 grams per liter. By comparison, a liter of air weighs 1.29 grams, 14 times as much as a liter of hydrogen. Hydrogen changes from a gas to a liquid at a temperature of -252.77°C (-422.99°F) and from a liquid to a solid at a temperature of -259.2°C (-434.6°F). It is slightly soluble in water, alcohol, and a few other common liquids.\n\n[DOC3]\nAt STP (standard temperature and pressure) hydrogen is a gas. It cools to a liquid at -423 °F, which is only about 37 degrees above absolute zero. Eleven degrees cooler, at … -434 °F, it starts to solidify.\n\n[DOC4]\nWhat is the temperature of the gas turn to liquid? Every gas has a different liquidation temperature based on what element it is. Hydrogen has a liquidation point of 423.17 degrees below zero F.\n\n[DOC5]\nUser: Hydrogen is a liquid below what temperature? a. 100 degrees C c. -183 degrees C b. -253 degrees C d. 0 degrees C Weegy: Hydrogen is a liquid below 253 degrees C. User: What is the boiling point of oxygen? a. 100 degrees C c. -57 degrees C b. 8 degrees C d. -183 degrees C Weegy: The boiling point of oxygen is -183 degrees C.",
+        "k_shots": 5,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        hydrogen is a liquid below what temperature\n\n        Relevant Documents:\n        [DOC1]\nGas. For hydrogen to become a liquid, you need to cool it down to 20.28 K, which is -252.87 degrees Celcius, or -434.45 degrees Fahrenheit if that is more your style. 6 people found this useful.\n\n[DOC2]\nHydrogen is a colorless, odorless, tasteless gas. Its density is the lowest of any chemical element, 0.08999 grams per liter. By comparison, a liter of air weighs 1.29 grams, 14 times as much as a liter of hydrogen. Hydrogen changes from a gas to a liquid at a temperature of -252.77°C (-422.99°F) and from a liquid to a solid at a temperature of -259.2°C (-434.6°F). It is slightly soluble in water, alcohol, and a few other common liquids.\n\n[DOC3]\nAt STP (standard temperature and pressure) hydrogen is a gas. It cools to a liquid at -423 °F, which is only about 37 degrees above absolute zero. Eleven degrees cooler, at … -434 °F, it starts to solidify.\n\n[DOC4]\nWhat is the temperature of the gas turn to liquid? Every gas has a different liquidation temperature based on what element it is. Hydrogen has a liquidation point of 423.17 degrees below zero F.\n\n[DOC5]\nUser: Hydrogen is a liquid below what temperature? a. 100 degrees C c. -183 degrees C b. -253 degrees C d. 0 degrees C Weegy: Hydrogen is a liquid below 253 degrees C. User: What is the boiling point of oxygen? a. 100 degrees C c. -57 degrees C b. 8 degrees C d. -183 degrees C Weegy: The boiling point of oxygen is -183 degrees C.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Based on the provided relevant documents, the temperature below which hydrogen is a liquid is:\n\n-252.87 degrees Celsius (or -252.77°C, as mentioned in DOC2, with a slight variation in decimal places) or -434.45 degrees Fahrenheit (or -423 °F, as mentioned in DOC3, with a slight variation in decimal places).",
+        "generation_time_seconds": "10.323991"
+    },
+    "1133167": {
+        "query_text": "how is the weather in jamaica",
+        "icl_examples": "[DOC1]\nQuick Answer. The climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year.\n\n[DOC2]\nQuick Answer. The climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year. Continue Reading.\n\n[DOC3]\nThe climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year.\n\n[DOC4]\nJamaica's average annual temperature is 80°F / 27°C. The average yearly temperature range is between 78-85°F. Extreme temperatures range from a low of 65°F to a high of 95°F. The rainiest weather in Jamaica occurs in May and June and again in October and November and can sometimes extend into December. Official hurricane season runs from June through November, with August and September being the peak months.",
+        "k_shots": 4,
+        "generator_model": "Llama-3.1-8B-Instruct",
+        "generation_prompt": [
+            {
+                "role": "system",
+                "content": "\n        You are an expert information retrieval and question-answering system.\n        "
+            },
+            {
+                "role": "user",
+                "content": "\n        Generate a relevant answer for the following search query.\n\n        The accompanying documents are known relevant documents from the TREC qrels for this query. Use them as evidence of what information is considered relevant.\n\n        Query:\n        how is the weather in jamaica\n\n        Relevant Documents:\n        [DOC1]\nQuick Answer. The climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year.\n\n[DOC2]\nQuick Answer. The climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year. Continue Reading.\n\n[DOC3]\nThe climate in Jamaica is tropical and humid with warm to hot temperatures all year round. The average temperature in Jamaica is between 80 and 90 degrees Fahrenheit. Jamaican nights are considerably cooler than the days, and the mountain areas are cooler than the lower land throughout the year.\n\n[DOC4]\nJamaica's average annual temperature is 80°F / 27°C. The average yearly temperature range is between 78-85°F. Extreme temperatures range from a low of 65°F to a high of 95°F. The rainiest weather in Jamaica occurs in May and June and again in October and November and can sometimes extend into December. Official hurricane season runs from June through November, with August and September being the peak months.\n\n        Generate a single well-formed answer that fully satisfies the information need expressed by the query.\n\n        Answer:\n        "
+            }
+        ],
+        "generated_doc": "Based on the relevant documents provided, the information need expressed by the query \"how is the weather in Jamaica\" can be fully satisfied with the following well-formed answer:\n\n\"The weather in Jamaica is generally tropical and humid, with warm to hot temperatures throughout the year. The average temperature ranges from 78°F to 95°F, with an average annual temperature of 80°F. Jamaican nights are cooler than the days, and the mountain areas are cooler than the lower land. The rainiest weather occurs in May and June, and again in October and November, with official hurricane season running from June through November, peaking in August and September.\"",
+        "generation_time_seconds": "9.343629"
+    }
+}
