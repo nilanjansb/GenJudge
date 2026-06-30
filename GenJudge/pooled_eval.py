@@ -4,6 +4,7 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
+import ir_datasets
 import pyterrier as pt
 from GenJudge.pooling import Pooling
 from bert_score import score as bscore 
@@ -136,18 +137,23 @@ class PooledEval():
 
         return results, per_query_results
 
-    def ndcg_all_runs(self, passage_runs_loc, relevant_docs_dict, qrels, K):
+    def ndcg_all_runs(
+        self,
+        passage_runs_loc,
+        relevant_docs_dict,
+        qrel_docs_dict,
+        qrels,
+        K,
+    ):
 
         def bert_to_rel(score):
-            # graded relevance from similarity (ONLY for unjudged docs)
             if score >= 0.95:
                 return 3
             elif score >= 0.90:
                 return 2
             elif score >= 0.80:
                 return 1
-            else:
-                return 0
+            return 0
 
         def dcg(scores):
             return sum(
@@ -155,10 +161,11 @@ class PooledEval():
                 for i, g in enumerate(scores)
             )
 
-        # -----------------------------
-        # Build QREL lookup
-        # -----------------------------
+        # --------------------------------------------------
+        # QREL LOOKUP
+        # --------------------------------------------------
         qrel_lookup = defaultdict(dict)
+
         for _, row in qrels.iterrows():
             qrel_lookup[row["qid"]][row["docno"]] = row["label"]
 
@@ -166,129 +173,253 @@ class PooledEval():
         all_results_pq = {}
         execution_time = {}
 
-        for file_loc in tqdm(passage_runs_loc, total=len(passage_runs_loc)):
+        for file_loc in tqdm(
+            passage_runs_loc,
+            total=len(passage_runs_loc)
+        ):
 
             start_time_per = time.perf_counter()
 
             run_df = self.load_runs_to_df(file_loc)
-            effective_run_df = run_df[run_df["qid"].isin(qrels["qid"].unique())]
 
-            all_cands = []
-            all_refs = []
-            meta_qids = []
-            meta_docnos = []
+            effective_run_df = run_df[
+                run_df["qid"].isin(qrels["qid"].unique())
+            ]
 
             grouped = effective_run_df.groupby("qid")
 
-            # -----------------------------
-            # STEP 1: BUILD BATCH FOR BERTSCORE
-            # -----------------------------
+            # --------------------------------------------------
+            # BUILD BERTSCORE BATCH
+            # --------------------------------------------------
+            all_cands = []
+            all_refs = []
+
+            meta_qids = []
+            meta_docnos = []
+
+            # identify reference type
+            meta_ref_type = []
+            meta_ref_label = []
+
             for qid, group in grouped:
 
                 ranked_docs = group["docno"].tolist()[:K]
 
-                if qid not in relevant_docs_dict:
-                    continue
+                generated_ref = relevant_docs_dict.get(qid)
 
-                relevant_doc = relevant_docs_dict[qid]
+                qrel_docs = qrel_docs_dict.get(qid, [])
 
                 for doc in ranked_docs:
-                    all_cands.append(doc)
-                    all_refs.append(relevant_doc)
-                    meta_qids.append(qid)
-                    meta_docnos.append(doc)
+
+                    # compare against generated reference
+                    if generated_ref is not None:
+
+                        all_cands.append(doc)
+                        all_refs.append(generated_ref)
+
+                        meta_qids.append(qid)
+                        meta_docnos.append(doc)
+
+                        meta_ref_type.append("generated")
+                        meta_ref_label.append(None)
+
+                    # compare against every qrel document
+                    for qrel_doc in qrel_docs:
+
+                        all_cands.append(doc)
+                        all_refs.append(qrel_doc["text"])
+
+                        meta_qids.append(qid)
+                        meta_docnos.append(doc)
+
+                        meta_ref_type.append("qrel")
+                        meta_ref_label.append(
+                            qrel_doc["label"]
+                        )
 
             if len(all_cands) == 0:
-                file_name = str(file_loc).split('\\')[-1]
+
+                file_name = str(file_loc).split("\\")[-1]
+
                 all_results[file_name] = 0.0
                 all_results_pq[file_name] = []
-                execution_time[file_name] = time.perf_counter() - start_time_per
+
+                execution_time[file_name] = (
+                    time.perf_counter()
+                    - start_time_per
+                )
+
                 continue
 
-            # -----------------------------
-            # STEP 2: BERTSCORE (GPU BATCHED)
-            # -----------------------------
+            # --------------------------------------------------
+            # BERTSCORE
+            # --------------------------------------------------
             _, _, F1 = bscore(
                 all_cands,
                 all_refs,
                 lang="en",
                 device="cuda",
                 batch_size=256,
-                verbose=False
+                verbose=False,
             )
 
             gains = F1.tolist()
 
-            # (qid, docno) -> similarity
-            bert_lookup = {}
-            for qid, docno, score in zip(meta_qids, meta_docnos, gains):
-                bert_lookup[(qid, docno)] = score
+            # --------------------------------------------------
+            # STORE ALL MATCHES
+            # --------------------------------------------------
+            similarity_lookup = defaultdict(list)
 
-            # -----------------------------
-            # STEP 3: BUILD GRADES PER QUERY
-            # -----------------------------
+            for (
+                qid,
+                docno,
+                score,
+                ref_type,
+                ref_label,
+            ) in zip(
+                meta_qids,
+                meta_docnos,
+                gains,
+                meta_ref_type,
+                meta_ref_label,
+            ):
+
+                similarity_lookup[(qid, docno)].append(
+                    {
+                        "score": score,
+                        "type": ref_type,
+                        "label": ref_label,
+                    }
+                )
+
+            # --------------------------------------------------
+            # BUILD RELEVANCE GRADES
+            # --------------------------------------------------
             grouped_scores = defaultdict(list)
 
             for qid, group in grouped:
 
                 ranked_docs = group["docno"].tolist()[:K]
+
                 qrels_for_q = qrel_lookup.get(qid, {})
 
                 rels = []
 
                 for docno in ranked_docs:
 
-                    # PRIORITY 1: HUMAN JUDGMENT
+                    # --------------------------
+                    # HUMAN JUDGMENT
+                    # --------------------------
                     if docno in qrels_for_q:
+
                         rel = qrels_for_q[docno]
 
-                    # PRIORITY 2: GENERATED SEMANTIC RELEVANCE
                     else:
-                        sim = bert_lookup.get((qid, docno), 0.0)
-                        rel = bert_to_rel(sim)
+
+                        matches = similarity_lookup.get(
+                            (qid, docno),
+                            []
+                        )
+
+                        best_qrel_sim = -1
+                        best_qrel_grade = 0
+
+                        generated_sim = 0
+
+                        for m in matches:
+
+                            if m["type"] == "generated":
+
+                                generated_sim = max(
+                                    generated_sim,
+                                    m["score"]
+                                )
+
+                            elif m["type"] == "qrel":
+
+                                if m["score"] > best_qrel_sim:
+
+                                    best_qrel_sim = m["score"]
+                                    best_qrel_grade = (
+                                        m["label"]
+                                    )
+
+                        # --------------------------------
+                        # Relevance propagation from qrels
+                        # --------------------------------
+                        if best_qrel_sim >= 0.90:
+
+                            rel = best_qrel_grade
+
+                        else:
+
+                            rel = bert_to_rel(
+                                max(
+                                    generated_sim,
+                                    best_qrel_sim
+                                )
+                            )
 
                     rels.append(rel)
 
                 grouped_scores[qid] = rels
 
-            # -----------------------------
-            # STEP 4: COMPUTE NDCG PER QUERY
-            # -----------------------------
+            # --------------------------------------------------
+            # NDCG
+            # --------------------------------------------------
             ndcgs = []
 
             for qid, scores in grouped_scores.items():
 
                 dcg_val = dcg(scores)
 
-                # Ideal ranking from QRELS (ground truth dominates)
                 ideal_rels = sorted(
-                    list(qrel_lookup.get(qid, {}).values()),
-                    reverse=True
-                )[:len(scores)]
+                    list(
+                        qrel_lookup
+                        .get(qid, {})
+                        .values()
+                    ),
+                    reverse=True,
+                )[: len(scores)]
 
-                # pad if qrels smaller than K
                 if len(ideal_rels) < len(scores):
-                    ideal_rels += [0] * (len(scores) - len(ideal_rels))
+
+                    ideal_rels += [0] * (
+                        len(scores)
+                        - len(ideal_rels)
+                    )
 
                 idcg_val = dcg(ideal_rels)
 
-                ndcgs.append(dcg_val / idcg_val if idcg_val > 0 else 0.0)
+                ndcg = (
+                    dcg_val / idcg_val
+                    if idcg_val > 0
+                    else 0.0
+                )
 
-            # -----------------------------
-            # STEP 5: STORE RESULTS
-            # -----------------------------
-            file_name = str(file_loc).split('\\')[-1]
+                ndcgs.append(ndcg)
+
+            file_name = str(file_loc).split("\\")[-1]
 
             all_results[file_name] = round(
-                sum(ndcgs) / len(ndcgs) if ndcgs else 0.0,
-                4
+                sum(ndcgs) / len(ndcgs)
+                if ndcgs
+                else 0.0,
+                4,
             )
 
             all_results_pq[file_name] = ndcgs
 
-            execution_time[file_name] = time.perf_counter() - start_time_per
+            execution_time[file_name] = (
+                time.perf_counter()
+                - start_time_per
+            )
 
-        return all_results, all_results_pq, execution_time
+        return (
+            all_results,
+            all_results_pq,
+            execution_time,
+        )
 
     def load_relevant_docs_dict(self, model_responses_loc):
         
@@ -369,6 +500,51 @@ class PooledEval():
             df = pd.DataFrame([new_row])
 
         df.to_csv(summary_file, index=False,  sep='\t')
+    
+    def build_qrel_texts(self, qrels):
+        """
+        Add document text to qrels by looking up all qrel docnos
+        from the IR-Datasets corpus.
+        """
+
+        # Dataset Name Mapping
+        if self.ds=='TREC28':
+            dataset_name = "msmarco-passage/trec-dl-2019/judged"
+        elif self.ds=='TREC29':
+            dataset_name = "msmarco-passage/trec-dl-2020/judged"
+
+        dataset = ir_datasets.load(dataset_name)
+
+        needed_docnos = set(qrels["docno"].astype(str).unique())
+
+        doc_lookup = {}
+
+        for doc in tqdm(
+            dataset.docs_iter(),
+            total=len(needed_docnos),
+            desc="Loading QREL documents"
+        ):
+
+            if doc.doc_id in needed_docnos:
+
+                doc_lookup[doc.doc_id] = doc.text
+
+                if len(doc_lookup) == len(needed_docnos):
+                    break
+
+        qrels_with_text = qrels.copy()
+
+        qrels_with_text["text"] = (
+            qrels_with_text["docno"]
+            .astype(str)
+            .map(doc_lookup)
+        )
+
+        qrels_with_text = qrels_with_text.dropna(
+            subset=["text"]
+        )
+
+        return qrels_with_text
 
 
     def main(self):
@@ -388,7 +564,7 @@ class PooledEval():
         pooling_obj = Pooling()
         passage_runs_name, test_passage_runs = pooling_obj.separate_runs()
 
-        # test_passage_runs = test_passage_runs[:3] ## testing only
+        # test_passage_runs = test_passage_runs[:5] ## testing only
         # scores = self.evaluate_ndcg_pyterrier(test_passage_runs, qrels, 10)
 
         ## nDCG with official runs and QRELS
@@ -402,7 +578,8 @@ class PooledEval():
         ## nDCG with official runs and generated judgment
         context_file_loc_name = Path(f'GenJudge/results/context_store/context_{self.ds}_runs_{self.k}.json')
         relevant_docs_dict = self.load_relevant_docs_dict(context_file_loc_name)
-        gen_scores, gen_scores_pq, execution_time = self.ndcg_all_runs(test_passage_runs, relevant_docs_dict, filtered_qrels, 10)
+        qrel_texts = self.build_qrel_texts(filtered_qrels)
+        gen_scores, gen_scores_pq, execution_time = self.ndcg_all_runs(test_passage_runs, relevant_docs_dict, qrel_texts, filtered_qrels, 10)
         gen_scores_df = pd.DataFrame(list(gen_scores.items()), columns=["run", "ndcg@10"])
         execution_time_df = pd.DataFrame(list(execution_time.items()), columns=["run", "Execution Time"])
         
