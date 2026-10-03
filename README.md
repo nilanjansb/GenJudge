@@ -1,4 +1,4 @@
-# GenJudge
+# GenJudge: HYpothetical Document Relevance based Assessment (HYDRA),
 Online Evaluation of Information Retrieval Models Using Generative Judgment with Pooled Context
 
 
