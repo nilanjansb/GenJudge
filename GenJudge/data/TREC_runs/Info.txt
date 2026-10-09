@@ -1,0 +1,9 @@
+TREC19 = TREC DL-2019 Judged Our Runs
+
+TREC20 = TREC DL-2020 Judged Our Runs
+
+TREC28 = TREC DL-2019 Judged Official Runs
+
+TREC29 = TREC DL-2019 Judged Official Runs
+
+TREC30 = MSMARCO PASSAGE DEV SMALL

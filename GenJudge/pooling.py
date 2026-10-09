@@ -17,7 +17,7 @@ class Pooling():
         CLI.add_argument("--qrels_loc", type=str, default='NA')
         CLI.add_argument("--k", type=int)
 
-        args = CLI.parse_args()
+        args, unknown = CLI.parse_known_args()
 
         self.runs_loc = args.runs_loc
         self.qrels_loc = args.qrels_loc
@@ -60,7 +60,12 @@ class Pooling():
                 continue
 
             path = os.path.join(self.runs_loc, file_name)
-            run_type = self.detect_run_type(path)
+
+            # Skip run type detection for COVID runs and directly classify them as passage runs
+            if "covid" in str(path):
+                run_type = "passage"
+            else:
+                run_type = self.detect_run_type(path)
 
             if run_type == "passage":
                 passage_runs_name.append(file_name)
@@ -119,18 +124,3 @@ class Pooling():
     
 if __name__ == "__main__":
     Pooling().main()
-
-
-'''
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 1
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 2
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 3
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 4
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 5
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 6
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 7
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 8
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 9
-python -m GenJudge.pooling --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --k 10
-
-'''

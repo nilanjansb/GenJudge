@@ -30,10 +30,8 @@ class GenJudgment():
         self.runs_loc = args.runs_loc
         self.qrels_loc = args.qrels_loc
         self.k = args.k
-        self.ds = self.runs_loc.split('\\')[-1]
+        self.ds = self.runs_loc.replace('\\', '/').rstrip('/').split('/')[-1]
         self.model_name = 'Llama-3.1-8B-Instruct'
-
-        os.environ["HF_TOKEN"] = "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"
 
         self.hf_model_name_map = {
             'Llama-3.1-8B-Instruct':"meta-llama/Llama-3.1-8B-Instruct"
@@ -118,7 +116,7 @@ class GenJudgment():
         print(">> gen_qrels File Not Found (Generating gen_qrels File.)")
         judge = LLMJudge(model_name=self.hf_model_name_map[self.model_name],short_model_name = self.model_name, trec_run=self.ds)
         gen_qrels=judge.judge_csv(text_res)
-        gen_qrels.to_csv(gen_qrels_loc_name,index=False, sep = '\t')
+        gen_qrels.to_csv(gen_qrels_loc_name,index=False, header=False, sep = '\t')
         print('File Saved: ', gen_qrels_file_name)
 
     def main(self):
@@ -145,30 +143,3 @@ class GenJudgment():
 
 if __name__ == "__main__":
     GenJudgment().main()
-
-'''
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 1
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 2
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 3
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 4
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 5
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 6
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 7
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 8
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 9
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 10
-
-
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 1
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 2
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 3
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 4
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 5
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 6
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 7
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 8
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 9
-python -X utf8 -m GenJudge.gen_judgment --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC29" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2020qrels-pass.txt" --k 10
-
-
-'''

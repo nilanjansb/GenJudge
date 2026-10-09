@@ -1,2 +1,0 @@
-Evaluation	Original_Filtered	Original_Generated	Filtered_Generated	Effective_QRELS
-eval_TREC28_runs_K1_R37	0.708803812391376	0.769925682544087	0.9211122058772845	419

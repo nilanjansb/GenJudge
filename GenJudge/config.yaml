@@ -1,0 +1,16 @@
+bert_score:
+    device: "cuda"
+    lang: "en" 
+    batch_size: 256
+    verbose: False
+
+llm:
+    model_name: "Llama-3.1-8B-Instruct"
+    model_path: "meta-llama/Llama-3.1-8B-Instruct"
+    device: "cuda"
+
+hyperparameters:
+    rel_label: 2 # To reproduce the experimental results use 2 for DL-2019 and DL-2020, and 1 for dev.small and COVID.
+
+env:
+    HF_TOKEN: "" # Set your HuggingFace token here to download the models. You can get it from https://huggingface.co/settings/tokens

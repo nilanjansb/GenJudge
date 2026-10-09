@@ -30,10 +30,12 @@ class GenContext():
         self.runs_loc = args.runs_loc
         self.qrels_loc = args.qrels_loc
         self.k = args.k
-        self.ds = self.runs_loc.split('\\')[-1]
+        self.ds = self.runs_loc.replace('\\', '/').rstrip('/').split('/')[-1]
         self.model_name = 'Llama-3.1-8B-Instruct'
 
-        os.environ["HF_TOKEN"] = "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"
+        ### Set Relevance Label ###
+        # self.rel_label = 3 # set-relevance label as 3 by default
+        self.rel_label = 1 # set-relevance label as 1 for dev.small
 
         hf_model_name_map = {
             'Llama-3.1-8B-Instruct':"meta-llama/Llama-3.1-8B-Instruct"
@@ -62,24 +64,32 @@ class GenContext():
         return pre_context
     
     def create_pre_context_file(self, pre_context_file_loc_name):
+        # Dataset Name Mapping
+        if self.ds=='TREC28' or self.ds=='TREC19':
+            dataset_name = "msmarco-passage/trec-dl-2019/judged"
+        elif self.ds=='TREC29' or self.ds=='TREC20':
+            dataset_name = "msmarco-passage/trec-dl-2020/judged"
+        elif self.ds=='TRECCOVID':
+            dataset_name = "beir/trec-covid"
+        elif self.ds=='TREC30':
+            dataset_name = "msmarco-passage/dev/small"
+
+        # Load IR_Datasets 
+        dataset = ir_datasets.load(dataset_name)
+        
+        # Get QRELS from Pyterrier Datasets
+        pyt_ds = pt.datasets.get_dataset('irds:'+dataset_name)
+        qrels = pyt_ds.get_qrels()
+
         # Load pooled runs amd extract docids of relevant documents from QRELS
         pooled_eval_obj = PooledEval()
         file_loc_name = Path(f'GenJudge/results/pooled_runs/pooled_{self.ds}_runs_{self.k}.tsv')
         pooled_runs = pooled_eval_obj.load_pooled_runs(file_loc_name)
-        qrels = pooled_eval_obj.load_qrels()
+        # qrels = pooled_eval_obj.load_qrels(self.qrels_loc)
         filtered_qrels = pooled_eval_obj.filter_qrels(qrels, pooled_runs)
-        relevant_filtered_qrels = self.extract_relevant_document(filtered_qrels, 3) # set-relevance label as 3 by default
-
+        relevant_filtered_qrels = self.extract_relevant_document(filtered_qrels, self.rel_label)
+        
         qids = []
-
-        # Dataset Name Mapping
-        if self.ds=='TREC28':
-            dataset_name = "msmarco-passage/trec-dl-2019/judged"
-        elif self.ds=='TREC29':
-            dataset_name = "msmarco-passage/trec-dl-2020/judged"
-
-        # Load IR_Datasets 
-        dataset = ir_datasets.load(dataset_name)
 
         query_lookup = {}
         for query in tqdm(dataset.queries_iter(), desc="Loading Queries"):
@@ -127,17 +137,50 @@ class GenContext():
         print('File Saved: ',pre_context_file_loc_name)
     
     def generate_context_file(self, pre_context_file_loc_name, context_file_loc_name):
+        # Define cache directory and file path
+        cache_dir = Path("GenJudge/results/context_store/cache")
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Create cache filename based on model name and dataset
+        cache_filename = f"{self.model_name}_{self.ds}_cache.json"
+        cache_file_path = cache_dir / cache_filename
+        
+        # Load existing cache if it exists
+        existing_context = {}
+        if cache_file_path.exists():
+            with open(cache_file_path, "r", encoding="utf-8") as f:
+                existing_context = json.load(f)
+        
         # Load pre-context
         pre_context = self.load_pre_context(pre_context_file_loc_name)
 
-        # pre_context = pre_context.head()
+        # Filter out already processed QIDs from the pre_context DataFrame
+        processed_qids = {str(qid) for qid in existing_context.keys()}
+
+        if processed_qids:
+            qid_as_string = pre_context['qid'].astype('string')
+
+            pre_context_filtered = pre_context[
+                ~qid_as_string.isin(processed_qids)
+            ]
+        else:
+            pre_context_filtered = pre_context
 
         # Make Zeroshot/Fewshot Prompt
-        grouped = pre_context.groupby("qid")
+        # pre_context_filtered = pre_context_filtered.head(5)  # Limit to first 5 rows for testing
 
-        context_json = {}
+        grouped = pre_context_filtered.groupby("qid")
 
-        for qid, group in tqdm(grouped, total=len(grouped), desc="Generating Context using LLM"):
+        # Initialize context_json with existing data
+        context_json = existing_context.copy()
+
+        # Process only unprocessed queries
+        total_groups = len(grouped)
+        processed_count = len(processed_qids)
+        print(f"Already processed: {processed_count}/{total_groups} queries")
+        print(f"Remaining to process: {total_groups} queries")
+        
+        for qid, group in tqdm(grouped, total=total_groups, desc="Generating Context using LLM"):
             # Record the starting time
             start_time = time.perf_counter()
             
@@ -146,7 +189,7 @@ class GenContext():
             docs = [x for x in docs if pd.notna(x)]
 
             sys_prompt = Prompts.SYSTEM_PROMPT
-
+            icl_docs = ""
             if docs:
                 # few-shot
                 icl_docs = self.format_relevant_documents(docs)
@@ -186,12 +229,23 @@ class GenContext():
                     'generated_doc':generated_doc,
                     'generation_time_seconds':generation_time_seconds
                 }
+            
+            # Save cache incrementally every 10 queries to avoid data loss
+            if len(context_json) % 10 == 0:
+                with open(cache_file_path, "w", encoding="utf-8") as f:
+                    json.dump(context_json, f, indent=4, ensure_ascii=False)
+                print(f"Cache updated: {len(context_json)} queries processed")
 
-        # Save the JSON file
+        # Save final JSON file
         with open(context_file_loc_name, "w", encoding="utf-8") as f:
             json.dump(context_json, f, indent=4, ensure_ascii=False)
         
+        # Save final cache file
+        with open(cache_file_path, "w", encoding="utf-8") as f:
+            json.dump(context_json, f, indent=4, ensure_ascii=False)
+        
         print('File Saved: ',context_file_loc_name)
+        print('Cache File Saved: ',cache_file_path)
 
 
     def main(self):
@@ -216,18 +270,3 @@ class GenContext():
 
 if __name__ == "__main__":
     GenContext().main()
-
-'''
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 1
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 2
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 3
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 4
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 5
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 6
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 7
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 8
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 9
-python -X utf8 -m GenJudge.gen_context --runs_loc "E:\\Nilanjan\\DataStore\\TREC_runs\\TREC28" --qrels_loc "E:\\Nilanjan\\KShot_IREval\\GenJudge\\data\\official_qrels\\2019qrels-pass.txt" --k 10
-
-
-'''
